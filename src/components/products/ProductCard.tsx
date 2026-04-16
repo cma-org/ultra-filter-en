@@ -27,6 +27,8 @@ export default function ProductCard({ title, description, image, href, className
             alt={title}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            quality={90}
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#003366] to-[#0066a4]">
@@ -42,10 +44,10 @@ export default function ProductCard({ title, description, image, href, className
         <h3 className="font-bold text-[#003366] text-base mb-2 group-hover:text-[#0066a4] transition-colors leading-snug">
           {title}
         </h3>
-        <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">
+        <p className="text-sm text-gray-700 leading-6 line-clamp-3">
           {description}
         </p>
-        <div className="mt-3 flex items-center text-xs font-semibold text-[#e87722] group-hover:gap-2 gap-1 transition-all">
+        <div className="mt-3 flex items-center text-sm font-semibold text-[#0066a4] group-hover:gap-2 gap-1 transition-all">
           <span>Learn more</span>
           <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

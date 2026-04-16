@@ -96,29 +96,34 @@ export default function Header() {
                 {/* Mega / Dropdown menu */}
                 {item.children && activeMenu === item.href && (
                   <div
-                    className="absolute top-full right-0 bg-white shadow-xl border-t-2 border-[#e87722] min-w-[220px] z-50 animate-in fade-in duration-150"
+                    className={cn(
+                      'absolute top-full z-50 animate-in border-t-2 border-[#e87722] bg-white shadow-xl fade-in duration-150',
+                      item.children.some(c => c.children)
+                        ? 'left-1/2 w-screen max-w-none -translate-x-1/2'
+                        : 'right-0 w-[min(92vw,360px)]'
+                    )}
                     onMouseLeave={() => setActiveMenu(null)}
                   >
                     {/* Products: two-column mega menu */}
                     {item.children.some(c => c.children) ? (
-                      <div className="grid grid-cols-2 gap-0 p-6 min-w-[680px]">
+                      <div className="grid min-h-0 grid-cols-2 gap-0 p-5">
                         {item.children.map((cat) => (
-                          <div key={cat.href} className="mb-4 pr-6">
+                          <div key={cat.href} className="mb-3 pr-6">
                             <Link
                               href={cat.href}
-                              className="block text-sm font-bold text-[#003366] hover:text-[#e87722] mb-1 transition-colors"
+                              className="mb-2 block text-base font-bold text-[#003366] transition-colors hover:text-[#e87722]"
                               onClick={() => setActiveMenu(null)}
                             >
                               {cat.label}
                             </Link>
                             {cat.description && (
-                              <p className="text-xs text-gray-500 mb-2 leading-snug">{cat.description}</p>
+                              <p className="mb-2 text-sm leading-snug text-gray-500">{cat.description}</p>
                             )}
                             {cat.children?.map((sub) => (
                               <Link
                                 key={sub.href}
                                 href={sub.href}
-                                className="block text-xs text-gray-600 hover:text-[#0066a4] py-0.5 transition-colors pl-2 border-l-2 border-transparent hover:border-[#e87722]"
+                                className="block border-l-2 border-transparent py-0.5 pl-2 text-sm text-gray-600 transition-colors hover:border-[#e87722] hover:text-[#0066a4]"
                                 onClick={() => setActiveMenu(null)}
                               >
                                 {sub.label}
@@ -129,12 +134,12 @@ export default function Header() {
                       </div>
                     ) : (
                       // Simple dropdown
-                      <ul className="py-2 min-w-[220px]">
+                      <ul className="py-1.5">
                         {item.children.map((child) => (
                           <li key={child.href}>
                             <Link
                               href={child.href}
-                              className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-[#003366] transition-colors"
+                              className="block px-6 py-2 text-base text-gray-700 transition-colors hover:bg-blue-50 hover:text-[#003366]"
                               onClick={() => setActiveMenu(null)}
                             >
                               {child.label}

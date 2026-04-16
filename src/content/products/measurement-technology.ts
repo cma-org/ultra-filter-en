@@ -5,7 +5,7 @@ export const measurementTechnology: ProductCategory = {
   title: 'Measurement Technology',
   description:
     'Precision instruments and complete measurement systems for compressed air quality and efficiency monitoring — dew point, flow, leak detection, residual oil, and particle measurement.',
-  image: '/images/products/dew-point.jpg',
+  image: '/images/products/Measurement%20technology/Dew%20Point%20Measurement.jpeg',
   metaTitle: 'Measurement Technology – Compressed Air Instruments',
   metaDescription:
     'ultrafilter measurement technology: dew point meters, flow meters, leak detection equipment, residual oil analysers, and particle counters for compressed air systems.',
@@ -14,7 +14,7 @@ export const measurementTechnology: ProductCategory = {
       slug: 'dew-point',
       title: 'Dew Point Measurement',
       description: 'Portable and fixed dew point meters for compressed air and technical gas quality verification.',
-      image: '/images/products/dew-point.jpg',
+      image: '/images/products/Measurement%20technology/Dew%20Point%20Measurement.jpeg',
       metaTitle: 'Dew Point Measurement | ultrafilter',
       metaDescription: 'ultrafilter dew point meters for compressed air quality measurement — portable hand-held instruments and fixed-point continuous monitors.',
       heroTitle: 'Dew Point Measurement',

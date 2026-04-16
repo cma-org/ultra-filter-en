@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import HeroCarousel from '@/components/home/HeroCarousel';
+import HomeBelowHeroSections from '@/components/home/HomeBelowHeroSections';
 import ProductCard from '@/components/products/ProductCard';
 import ProductGrid from '@/components/products/ProductGrid';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
@@ -49,14 +50,7 @@ export default function HomePage() {
         {/* Hero Carousel */}
         <HeroCarousel slides={heroSlides} />
 
-        {/* Intro strip */}
-        <div className="bg-white border-b border-gray-100 py-6">
-          <div className="max-w-7xl mx-auto px-4">
-            <p className="text-center text-gray-600 text-sm md:text-base max-w-3xl mx-auto">
-              <strong className="text-[#003366]">ultrafilter GmbH</strong> — an owner-operated, premium manufacturer of compressed air filtration and gas treatment components. Based in Hilden, Germany. Active in <strong className="text-[#003366]">30+ countries</strong> worldwide.
-            </p>
-          </div>
-        </div>
+        <HomeBelowHeroSections />
 
         {/* Product Categories */}
         <section className="py-14 bg-[#f5f5f5]">
@@ -66,7 +60,7 @@ export default function HomePage() {
               subtitle="Comprehensive compressed air treatment — from filtration to drying, condensate management, and precision measurement."
               align="center"
             />
-            <ProductGrid cols={3}>
+            <ProductGrid cols={2}>
               {productCategories.map((cat) => (
                 <ProductCard
                   key={cat.href}
@@ -103,28 +97,39 @@ export default function HomePage() {
         </section>
 
         {/* Services strip */}
-        <section className="py-12 bg-[#003366]">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              <div>
-                <h2 className="text-2xl font-bold text-white mb-2">Service & Support</h2>
-                <p className="text-blue-200 text-sm max-w-xl">
-                  From repair and maintenance to energy audits and quality measurement — our service team keeps your compressed air system running at peak efficiency.
-                </p>
-              </div>
-              <div className="flex gap-3 shrink-0">
-                <Link
-                  href="/services"
-                  className="inline-block bg-[#e87722] hover:bg-orange-600 text-white font-bold px-6 py-3 rounded text-sm transition-colors"
-                >
-                  Our Services
-                </Link>
-                <Link
-                  href="/contact"
-                  className="inline-block border-2 border-white text-white hover:bg-white hover:text-[#003366] font-bold px-6 py-3 rounded text-sm transition-colors"
-                >
-                  Contact Us
-                </Link>
+        <section className="bg-[#003366] py-12">
+          <div className="mx-auto max-w-7xl px-4">
+            <div className="relative overflow-hidden rounded-md">
+              <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{ backgroundImage: "url('/images/services/maintenance.jpg')" }}
+                aria-hidden
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#00264a]/95 via-[#003366]/82 to-[#003366]/45" aria-hidden />
+              <div className="relative z-[1] flex min-h-[360px] flex-col justify-end gap-8 p-6 md:p-10">
+                <div className="max-w-2xl">
+                  <h2 className="mb-3 text-4xl font-bold leading-tight text-white md:text-6xl">Service &amp; Support</h2>
+                  <p className="mb-4 text-2xl font-semibold leading-tight text-white md:text-[2rem]">
+                    Dedicated to keeping your operations running smoothly.
+                  </p>
+                  <p className="max-w-xl text-base leading-relaxed text-blue-100 md:text-xl">
+                    Expert maintenance, repairs, and comprehensive service plans tailored to your needs.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+                  <Link
+                    href="/contact"
+                    className="inline-flex min-w-[220px] items-center justify-center rounded-md bg-[#ef6b57] px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-[#e25842]"
+                  >
+                    Request Service
+                  </Link>
+                  <Link
+                    href="/services"
+                    className="inline-flex min-w-[220px] items-center justify-center rounded-md border border-white/70 bg-[#0a2b4e]/35 px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-white hover:text-[#003366]"
+                  >
+                    Support Resources
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

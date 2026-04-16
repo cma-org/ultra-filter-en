@@ -1,19 +1,5 @@
 export const productCategories = [
   {
-    title: 'Industrial Filtration',
-    description:
-      'High-performance filter elements and housings for compressed air and gas purification — developed with nanotechnology.',
-    image: '/images/products/industrial-filtration.jpg',
-    href: '/products/industrial-filtration',
-  },
-  {
-    title: 'Process Filtration',
-    description:
-      'Sterile and process filtration for the food, beverage, and pharmaceutical industries. Depth filters, housings, and complete systems.',
-    image: '/images/products/process-filtration.jpg',
-    href: '/products/process-filtration',
-  },
-  {
     title: 'Drying Technology',
     description:
       'Refrigeration, adsorption, and membrane dryers — tailored to any dew point requirement and volume flow.',
@@ -31,7 +17,7 @@ export const productCategories = [
     title: 'Measurement Technology',
     description:
       'Instruments and systems for dew point, consumption, leak detection, residual oil, and particle measurement.',
-    image: '/images/products/dew-point.jpg',
+    image: '/images/products/Measurement%20technology/Dew%20Point%20Measurement.jpeg',
     href: '/products/measurement-technology',
   },
   {
