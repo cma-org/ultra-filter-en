@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
@@ -23,15 +24,28 @@ export default function Page() {
               <div className="border-b border-[#1f4567]/30 bg-[#0a4c79] px-3 py-1.5 text-sm font-medium text-white">
                 Calibration
               </div>
-              <div className="space-y-6 p-4 text-[13px] leading-7 text-[#3f3f3f]">
-                <p>
-                  Ultrafilter offers a calibration service for all sensors, including third-party brands, and on-site
-                  testing.
-                </p>
-                <p>
-                  For other physical units, we have contractual partners in Germany. All references refer to national
-                  standards and are recalibrated at regular intervals.
-                </p>
+              <div className="grid grid-cols-1 gap-6 p-4 md:grid-cols-[1fr_220px]">
+                <div className="space-y-6 text-[13px] leading-7 text-[#3f3f3f]">
+                  <p>
+                    Ultrafilter offers a calibration service for all sensors, including third-party brands, and on-site
+                    testing.
+                  </p>
+                  <p>
+                    For other physical units, we have contractual partners in Germany. All references refer to national
+                    standards and are recalibrated at regular intervals.
+                  </p>
+                </div>
+                <div className="flex items-start justify-center">
+                  <div className="relative h-[220px] w-[220px] overflow-hidden border border-[#d9d9d9] bg-white shadow-sm">
+                    <Image
+                      src="/images/products/callibration.jpg"
+                      alt="Calibration measuring tool"
+                      fill
+                      className="object-contain p-2"
+                      sizes="220px"
+                    />
+                  </div>
+                </div>
               </div>
             </section>
 

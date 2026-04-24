@@ -34,7 +34,7 @@ export default function Page() {
                 <div className="flex items-start justify-center">
                   <div className="relative h-[250px] w-[160px] border border-[#d9d9d9] bg-white shadow-sm">
                     <Image
-                      src="/images/products/Measurement%20technology/Flow%20measurement.jpg"
+                      src="/images/products/flow%20meter.jpg"
                       alt="Flow measurement device"
                       fill
                       className="object-contain p-2"

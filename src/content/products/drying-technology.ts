@@ -5,7 +5,7 @@ export const dryingTechnology: ProductCategory = {
   title: 'Drying Technology',
   description:
     'Compressed air drying solutions for every dew point requirement and volume flow — from energy-efficient refrigeration dryers to adsorption dryers and compact membrane dryers.',
-  image: '/images/products/drying-technology-hero.jpg',
+  image: '/drying-technology-hero.png',
   metaTitle: 'Drying Technology – Compressed Air Dryers',
   metaDescription:
     'ultrafilter compressed air dryers: refrigeration dryers (pressure dew point +3 °C), adsorption dryers (to −70 °C), and membrane dryers for low flow rates.',
@@ -15,7 +15,7 @@ export const dryingTechnology: ProductCategory = {
       title: 'Refrigeration Dryers',
       description:
         'Energy-efficient compressed air refrigeration dryers achieving a pressure dew point of approximately +3 °C.',
-      image: '/images/products/refrigeration-dryer.jpg',
+      image: '/images/products/drying-technology/Cold%20Regenerating%20Dryers/Refrigeration%20Dryers.jpg',
       metaTitle: 'Refrigeration Dryers | ultrafilter',
       metaDescription: 'ultrafilter refrigeration dryers — energy-efficient compressed air drying to a pressure dew point of +3 °C. Capacities from 5 to 10,000 m³/h.',
       heroTitle: 'Refrigeration Dryers',
@@ -44,7 +44,7 @@ export const dryingTechnology: ProductCategory = {
       title: 'Adsorption Dryers',
       description:
         'Compressed air adsorption dryers achieving pressure dew points from −20 °C to −70 °C for demanding applications.',
-      image: '/images/products/adsorption-dryer.jpg',
+      image: '/images/products/drying-technology/Refrigeration%20Dryers/Adsorption%20Dryers.jpg',
       metaTitle: 'Adsorption Dryers | ultrafilter',
       metaDescription: 'ultrafilter adsorption dryers achieve pressure dew points from −20 °C to −70 °C. Heatless, heated, and heat-of-compression variants available.',
       heroTitle: 'Adsorption Dryers',
@@ -70,7 +70,7 @@ export const dryingTechnology: ProductCategory = {
       title: 'Membrane Dryers',
       description:
         'Compact, maintenance-free membrane dryers for low volume flows — dew points from +15 °C down to −40 °C.',
-      image: '/images/products/membrane-dryer.jpg',
+      image: '/images/products/drying-technology/Membrane%20dryers/UFM%20md.jpg',
       metaTitle: 'Membrane Dryers | ultrafilter',
       metaDescription: 'ultrafilter membrane dryers — maintenance-free compressed air drying for low flow rates. Dew points from +15 °C to −40 °C without electricity.',
       heroTitle: 'Membrane Dryers',

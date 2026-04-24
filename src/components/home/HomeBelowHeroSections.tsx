@@ -5,11 +5,11 @@ const headingBlue = 'text-[#004a80]';
 const bodyGray = 'text-[#333333]';
 const divider = 'border-[#dddddd]';
 
-const imgYoutubeOverlay = '/images/home/Precision%20filtration%20technology/youtube2.png';
-const imgMicroscope = '/images/home/Precision%20filtration%20technology/submicron.png';
-const imgIndustrial = '/images/home/Precision%20filtration%20technology/industrial_filtration.png';
-const imgProcess = '/images/home/Precision%20filtration%20technology/process_filtration.png';
-const imgLiquid = '/images/home/Precision%20filtration%20technology/liquid_filtration.png';
+const imgYoutubeOverlay = '/images/home/youtube.jpg';
+const imgMicroscope = '/images/home/submicron.jpg';
+const imgIndustrial = '/images/home/Precision%20filtration%20technology/industrial_filtration.jpg';
+const imgProcess = '/images/home/Precision%20filtration%20technology/process_filtration.jpg';
+const imgLiquid = '/images/home/Precision%20filtration%20technology/liquid_filtration.jpg';
 
 function UltrafilterLogoMark({ className }: { className?: string }) {
   return (

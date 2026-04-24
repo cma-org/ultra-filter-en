@@ -41,7 +41,7 @@ export default function Page() {
                 <div className="flex items-center justify-center">
                   <div className="relative h-[170px] w-[220px] border border-[#d9d9d9] bg-white shadow-sm">
                     <Image
-                      src="/images/products/Measurement%20technology/Residual%20oil%20measurement.jpg"
+                      src="/images/products/particle%20counter.jpg"
                       alt="Particle measurement UF 130"
                       fill
                       className="object-contain p-2"

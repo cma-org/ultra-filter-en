@@ -77,7 +77,7 @@ export default function Page() {
                 'Pressure dew points down to -70°C',
                 'Service-friendly integrated broadband power supply for 100-240 VAC, 12-24 VDC, 50-60 Hz and can therefore be used worldwide',
               ]}
-              image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/compact%20UDC.jpeg"
+              image="/images/products/drying-technology/Refrigeration%20Dryers/Adsorption%20Dryers.jpg"
               imageAlt="ultra.dry compact UDC"
             />
 
@@ -112,7 +112,7 @@ export default function Page() {
                 'Grounding connection',
                 'Volume flows from 50 m3;3/h – 1000 m3;3/h',
               ]}
-              image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/Heatless%20HL.jpeg"
+              image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/Heatless%20HL.jpg"
               imageAlt="Heatless HL"
             />
 
@@ -146,7 +146,7 @@ export default function Page() {
                 'Pressure dew point – 20 °C up to – 70 °C',
                 'Volume flows from 50 m3;3/h – 1000 m3;3/h',
               ]}
-              image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/Heatless%20HL%20Cabinet.jpeg"
+              image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/Heatless%20HL%20Cabinet.jpg"
               imageAlt="Heatless HL Cabinet"
             />
 
@@ -161,7 +161,7 @@ export default function Page() {
                 'Volume flows from 1400 m3;3/h – 9500 m3;3/h',
                 'High corrosion resistance due to HT-galvanized piping',
               ]}
-              image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/Heatless%20HL%20maxi.jpeg"
+              image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/Heatless%20HL%20Maxi.jpg"
               imageAlt="Heatless HL Maxi"
             />
 
@@ -176,7 +176,7 @@ export default function Page() {
                 'Pressure dew point – 20 °C up to – 70 °C',
                 'Volume flows from 50 m3;3/h – 1000 m3;3/h',
               ]}
-              image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/OFA.jpeg"
+              image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/OFA.jpg"
               imageAlt="OFA adsorption dryer"
             />
 
@@ -189,7 +189,7 @@ export default function Page() {
                 'Pressure dew point – 20 °C up to – 40 °C',
                 'Volume flows from 50 m3;3/h – 375 m3;3/h',
               ]}
-              image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/OFA.jpeg"
+              image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/OFA.jpg"
               imageAlt="ALG breathing air device"
             />
 
@@ -215,7 +215,7 @@ export default function Page() {
               heading="AKC"
               intro="Activated carbon adsorbers AKC are used for the filtration of oil particles and aerosols. In addition, they absorb oil vapours and guarantee a residual oil content of less than 0.003 ppm after drying. An oil indicator monitors the oil content of the adsorber."
               bullets={['Volume flows 0050 – 9500 m³/h', 'Oil Indicator', 'Pressure gauge']}
-              image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/AKC.jpeg"
+              image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/AKC.jpg"
               imageAlt="AKC activated carbon adsorber"
             />
 
@@ -228,7 +228,7 @@ export default function Page() {
                 'Ermetro screw connection',
                 'Grounding connection',
               ]}
-              image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/Heatless%20HLP%20PN4.jpeg"
+              image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/Heatless%20HLP%20PN40.jpg"
               imageAlt="Heatless HLP PN40"
             />
 

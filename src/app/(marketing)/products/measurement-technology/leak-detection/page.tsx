@@ -37,7 +37,7 @@ export default function Page() {
                 <div className="flex items-center justify-center">
                   <div className="relative h-[220px] w-[210px] border border-[#d9d9d9] bg-white shadow-sm">
                     <Image
-                      src="/images/products/Measurement%20technology/Leak%20Detection.jpg"
+                      src="/images/products/leak%20detection.jpg"
                       alt="Leak detection device UF 530"
                       fill
                       className="object-contain p-2"

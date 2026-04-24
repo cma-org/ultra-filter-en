@@ -38,7 +38,7 @@ export default function Page() {
                 <div className="flex items-start justify-center">
                   <div className="relative h-[200px] w-[170px] border border-[#d9d9d9] bg-white shadow-sm">
                     <Image
-                      src="/images/products/Measurement%20technology/Dew%20Point%20Measurement.jpeg"
+                      src="/images/products/dew%20point.jpg"
                       alt="Dew Point Sensor"
                       fill
                       className="object-contain p-2"

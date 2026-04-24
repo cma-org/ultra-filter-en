@@ -23,28 +23,21 @@ export const companyInfo = {
 
 export const heroSlides = [
   {
-    image: '/images/home/hero-1.jpg',
+    image: '/images/home/h-1.jpg',
     heading: 'The Filtration Manufacturer',
     subheading: 'Premium compressed air filtration — engineered and manufactured in Germany.',
     ctaLabel: 'Explore Products',
     ctaHref: '/products',
   },
   {
-    image: '/images/home/hero-2.jpg',
+    image: '/images/home/h-2.jpg',
     heading: 'Submicron Filtration',
     subheading: 'High-performance filter elements achieving the cleanest compressed air — down to 0.01 µm.',
     ctaLabel: 'View Filter Elements',
     ctaHref: '/products/industrial-filtration/high-performance-filter-elements',
   },
   {
-    image: '/images/home/hero-3.jpg',
-    heading: 'ultrafilter on YouTube',
-    subheading: 'Watch our product demonstrations, application videos, and technical guides.',
-    ctaLabel: 'Visit Our Channel',
-    ctaHref: 'https://www.youtube.com/channel/UC8Tzmwj8P4Zef_nXVjJCO-A',
-  },
-  {
-    image: '/images/products/drying-technology-hero.jpg',
+    image: '/drying-technology-hero.png',
     heading: 'Drying Technology',
     subheading: 'Refrigeration, adsorption, and membrane dryers for every application.',
     ctaLabel: 'View Dryers',

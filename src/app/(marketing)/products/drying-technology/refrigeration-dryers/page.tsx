@@ -121,7 +121,7 @@ export default function Page() {
                 <div className="flex items-center justify-center">
                   <div className="relative h-[180px] w-[150px] border border-[#d9d9d9] bg-white shadow-sm">
                     <Image
-                      src="/images/products/drying-technology/Refrigeration%20Dryers/UDA%20UDW.jpeg"
+                      src="/images/products/drying-technology/UDA-UDW.jpg"
                       alt="Refrigeration Dryer UDA-UDW"
                       fill
                       className="object-contain p-2"

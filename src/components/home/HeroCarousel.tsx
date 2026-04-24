@@ -57,7 +57,6 @@ export default function HeroCarousel({ slides, interval = 5000 }: HeroCarouselPr
           className="object-cover"
           priority={current === 0}
         />
-        {/* Dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#001a33]/80 via-[#003366]/50 to-transparent" />
       </div>
 

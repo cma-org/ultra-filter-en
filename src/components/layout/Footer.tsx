@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { navigation } from '@/content/navigation';
 import { companyInfo } from '@/content/company';
@@ -13,8 +14,17 @@ export default function Footer() {
           {/* Company info */}
           <div>
             <div className="mb-4">
-              <span className="text-2xl font-black tracking-tight">ultra<span className="text-[#e87722]">filter</span></span>
-              <p className="text-xs text-blue-200 mt-1 uppercase tracking-widest">The Filtration Manufacturer</p>
+              <Link href="/" className="inline-block" aria-label="ultrafilter home">
+                <div className="relative h-12 w-52 sm:h-14 sm:w-60">
+                  <Image
+                    src="/images/White%20Ultrafilter%20logo-cropped.png"
+                    alt="ultrafilter – The Filtration Manufacturer"
+                    fill
+                    className="object-contain object-left"
+                    sizes="(max-width: 640px) 208px, 240px"
+                  />
+                </div>
+              </Link>
             </div>
             <address className="not-italic text-sm text-blue-100 leading-relaxed">
               <p className="font-semibold text-white">{companyInfo.name}</p>

@@ -80,7 +80,7 @@ export default function Page() {
                 'Volume flows 0400 m3;3/h - 9500m3;3/h',
                 'Pressure dew points down to -40°C',
               ]}
-              imageSrc="/images/products/drying-technology/Heat%20Regenerating%20Dryers/ultra.dry%20HRE.jpeg"
+              imageSrc="/images/products/drying-technology/Heat%20Regenerating%20Dryers/ultra.dry%20HRE.jpg"
               imageAlt="ultra.dry HRE"
             />
 
@@ -150,7 +150,7 @@ export default function Page() {
                 'Volume flows 0400 m3;3/h – 9500m3;3/h',
                 'Pressure dew points down to -70°C',
               ]}
-              imageSrc="/images/products/drying-technology/Heat%20Regenerating%20Dryers/VarioBlo%20Loop.jpeg"
+              imageSrc="/images/products/drying-technology/Heat%20Regenerating%20Dryers/VarioBlo%20Loop.jpg"
               imageAlt="VarioBlo Loop adsorption dryer"
             />
 
@@ -177,7 +177,7 @@ export default function Page() {
                 <div className="flex items-center justify-center">
                   <div className="relative h-[160px] w-[220px] border border-[#d9d9d9] bg-white shadow-sm">
                     <Image
-                      src="/images/products/drying-technology/Heat%20Regenerating%20Dryers/CompHeat.jpeg"
+                      src="/images/products/drying-technology/Heat%20Regenerating%20Dryers/CompHeat.jpg"
                       alt="CompHeat3 adsorption dryer"
                       fill
                       className="object-contain p-2"

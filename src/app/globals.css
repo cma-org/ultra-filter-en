@@ -75,3 +75,8 @@ body {
 .prose a:hover {
   color: #003366;
 }
+
+/* Hide Next.js devtools portal element in the DOM overlay */
+nextjs-portal {
+  display: none !important;
+}

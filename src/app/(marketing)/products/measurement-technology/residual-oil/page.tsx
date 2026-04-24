@@ -38,7 +38,7 @@ export default function Page() {
                 <div className="flex items-center justify-center">
                   <div className="relative h-[170px] w-[220px] border border-[#d9d9d9] bg-white shadow-sm">
                     <Image
-                      src="/images/products/Measurement%20technology/Residual%20oil%20measurement.jpg"
+                      src="/images/products/residual%20oil.jpg"
                       alt="Residual oil measurement UF 120"
                       fill
                       className="object-contain p-2"

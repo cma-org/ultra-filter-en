@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
 import { navigation } from '@/content/navigation';
@@ -63,10 +64,16 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 shrink-0">
-            <div className="flex flex-col leading-tight">
-              <span className="text-2xl font-black text-[#003366] tracking-tight">ultra<span className="text-[#e87722]">filter</span></span>
-              <span className="text-[10px] text-gray-500 uppercase tracking-widest hidden sm:block">The Filtration Manufacturer</span>
+          <Link href="/" className="flex shrink-0 items-center" aria-label="ultrafilter home">
+            <div className="relative h-12 w-56 min-w-[11rem] sm:h-14 sm:w-64 sm:min-w-[14rem] md:h-14 md:w-72">
+              <Image
+                src="/images/ultrafilter%20logo.png"
+                alt="ultrafilter – The Filtration Manufacturer"
+                fill
+                className="object-contain object-left"
+                sizes="(max-width: 640px) 224px, (max-width: 768px) 256px, 288px"
+                priority
+              />
             </div>
           </Link>
 

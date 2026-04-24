@@ -41,7 +41,7 @@ export default function Page() {
                 <div className="flex items-start justify-center">
                   <div className="relative h-[210px] w-[210px] border border-[#d9d9d9] bg-white shadow-sm">
                     <Image
-                      src="/images/products/drying-technology/Membrane%20dryers/UFM%20membrane%20dryer.jpg"
+                      src="/images/products/drying-technology/Membrane%20dryers/UFM%20md.jpg"
                       alt="Membrane Dryer UFM"
                       fill
                       className="object-contain p-2"

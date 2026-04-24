@@ -23,7 +23,7 @@ export default function Page() {
             <div className="mt-6 flex justify-center md:justify-end">
               <div className="relative h-[260px] w-[200px] overflow-hidden rounded border border-[#d9d9d9] bg-white shadow-sm">
                 <Image
-                  src="/images/products/Sterile%20Filter%20Box/Sterile%20Filter%20Box%20P-SLF.jpg"
+                  src="/images/products/Sterile%20Filter%20Box/Sterile%20Filter%20Box%20P%20SLF.jpg"
                   alt="Sterile Filter Box P-SLF"
                   fill
                   className="object-contain"
