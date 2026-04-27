@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import PageHero from '@/components/shared/PageHero';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
@@ -38,7 +38,7 @@ export default function Page() {
                 </p>
                 <p>
                   On average, 10 - 20 % of the compressed air generated is needed for regeneration. Pressure dew points
-                  down to -70°C can be realized. This corresponds to a residual water content of only 0.0028 g/m³!
+                  down to -70Â°C can be realized. This corresponds to a residual water content of only 0.0028 g/mÂ³!
                 </p>
               </div>
             </section>
@@ -46,7 +46,7 @@ export default function Page() {
             <section className="border-t border-[#d7d7d7] py-8">
               <a
                 href="/products/drying-technology/adsorption-dryers/cold-regenerating"
-                className="text-[18px] font-semibold text-[#123f66] hover:text-[#e87722]"
+                className="text-[18px] font-semibold text-[#123f66] hover:text-[#0066a4]"
               >
                 {'>>'}Here you will find our cold regenerating dryers.
               </a>
@@ -58,7 +58,7 @@ export default function Page() {
               </div>
               <div className="space-y-3 py-4 text-[13px] leading-7 text-[#444]">
                 <p>
-                  Adsorption dryers are typically used at pressure dew points below 0°C. Maximum efficiency and the
+                  Adsorption dryers are typically used at pressure dew points below 0Â°C. Maximum efficiency and the
                   highest operational reliability, combined with low operating costs, are among the great advantages
                   of adsorption dryers.
                 </p>
@@ -72,8 +72,8 @@ export default function Page() {
                 </p>
                 <p>
                   The consumption of regeneration energy by heaters and blowers is significantly lower than that of
-                  cold-refrigerating adidispensation dryers. Pressure dew points down to -70°C can be realized.
-                  This corresponds to a residual water content of only 0.0028 g/m³!
+                  cold-refrigerating adidispensation dryers. Pressure dew points down to -70Â°C can be realized.
+                  This corresponds to a residual water content of only 0.0028 g/mÂ³!
                 </p>
               </div>
             </section>
@@ -81,14 +81,14 @@ export default function Page() {
             <section className="border-t border-[#d7d7d7] py-8">
               <a
                 href="/products/drying-technology/adsorption-dryers/heat-regenerating"
-                className="text-[18px] font-semibold text-[#123f66] hover:text-[#e87722]"
+                className="text-[18px] font-semibold text-[#123f66] hover:text-[#0066a4]"
               >
                 {'>>'}Here you will find our heat-regenerating dryers.
               </a>
             </section>
 
             <div className="text-right">
-              <a href="/products/drying-technology/adsorption-dryers" className="text-sm font-semibold text-[#123f66] hover:text-[#e87722]">
+              <a href="/products/drying-technology/adsorption-dryers" className="text-sm font-semibold text-[#123f66] hover:text-[#0066a4]">
                 Printable Version
               </a>
               <p className="text-sm font-semibold text-[#123f66]">Cold Regenerating</p>
@@ -101,3 +101,4 @@ export default function Page() {
     </>
   );
 }
+

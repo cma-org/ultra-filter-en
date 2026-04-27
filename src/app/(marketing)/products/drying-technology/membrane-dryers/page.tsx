@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
@@ -59,10 +59,10 @@ export default function Page() {
               <div className="p-4">
                 <ul className="list-disc space-y-2 pl-5 text-[13px] leading-7 text-[#3f3f3f] marker:text-[#0a4c79]">
                   <li>
-                    14 different sizes with capacities between 2 and 180 m3; / h (at a dew point reduction of 15° C)
+                    14 different sizes with capacities between 2 and 180 m3; / h (at a dew point reduction of 15Â° C)
                     ensure perfect adaptation to the required flow rate.
                   </li>
-                  <li>ultra.dry UFM membrane dryers reach pressure dew points down to -40°C for a wide range of applications.</li>
+                  <li>ultra.dry UFM membrane dryers reach pressure dew points down to -40Â°C for a wide range of applications.</li>
                   <li>Each membrane dryer is equipped with a calibrated air purification mixer. No further adjustments are necessary.</li>
                   <li>Due to the non-fiber-releasing membrane, ultra.dry UFM membrane dryers are suitable for medical applications.</li>
                   <li>
@@ -76,10 +76,10 @@ export default function Page() {
             <section className="border-x border-b border-[#d7d7d7] px-4 py-5">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2 text-[14px]">
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download Datasheet Membrane Dryer D <span className="font-normal text-[#666]">(357 KB)</span>
                   </a>
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download Brochure Membrane Dryer (GB) <span className="font-normal text-[#666]">(1.191 KB)</span>
                   </a>
                 </div>
@@ -133,7 +133,7 @@ export default function Page() {
             </section>
 
             <div className="mt-6 text-right">
-              <a href="/products/drying-technology/membrane-dryers" className="text-sm font-semibold text-[#123f66] hover:text-[#e87722]">
+              <a href="/products/drying-technology/membrane-dryers" className="text-sm font-semibold text-[#123f66] hover:text-[#0066a4]">
                 Printable version
               </a>
             </div>
@@ -145,3 +145,4 @@ export default function Page() {
     </>
   );
 }
+

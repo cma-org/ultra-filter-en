@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import Image from 'next/image';
 import type { NewsArticle } from '@/types/news';
 
@@ -30,7 +30,7 @@ export default function NewsCard({ article, baseHref }: NewsCardProps) {
         <p className="text-xs text-gray-600 leading-relaxed line-clamp-3">{article.excerpt}</p>
         <Link
           href={`${baseHref}/${article.slug}`}
-          className="inline-flex items-center gap-1 mt-3 text-xs font-semibold text-[#e87722] hover:text-orange-600 transition-colors"
+          className="inline-flex items-center gap-1 mt-3 text-xs font-semibold text-[#0066a4] hover:text-[#003366] transition-colors"
         >
           Read more
           <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -41,3 +41,4 @@ export default function NewsCard({ article, baseHref }: NewsCardProps) {
     </article>
   );
 }
+

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/shared/PageHero';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
@@ -16,7 +16,7 @@ export default function Page() {
         {careersPage.sections.map((section, i) => (
           <div key={i}>
             {section.heading && (
-              <h2 className="text-2xl font-bold text-[#003366] mb-4 pb-2 border-b-2 border-[#e87722]">
+              <h2 className="text-2xl font-bold text-[#003366] mb-4 pb-2 border-b-2 border-[#0066a4]">
                 {section.heading}
               </h2>
             )}
@@ -25,7 +25,7 @@ export default function Page() {
         ))}
 
         <div>
-          <h2 className="text-2xl font-bold text-[#003366] mb-6 pb-2 border-b-2 border-[#e87722]">Current Openings</h2>
+          <h2 className="text-2xl font-bold text-[#003366] mb-6 pb-2 border-b-2 border-[#0066a4]">Current Openings</h2>
           {openPositions.length > 0 ? (
             <div className="space-y-4">
               {openPositions.map((job, i) => (
@@ -33,11 +33,11 @@ export default function Page() {
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                     <div>
                       <h3 className="text-lg font-semibold text-[#003366]">{job.title}</h3>
-                      <p className="text-sm text-gray-500 mt-1">{job.location} · {job.type}</p>
+                      <p className="text-sm text-gray-500 mt-1">{job.location} Â· {job.type}</p>
                     </div>
                     <Link
                       href={job.href || '/company/careers/open-positions'}
-                      className="shrink-0 bg-[#e87722] text-white px-5 py-2 text-sm font-semibold hover:bg-orange-600 transition-colors rounded"
+                      className="shrink-0 bg-[#0066a4] text-white px-5 py-2 text-sm font-semibold hover:bg-[#00558a] transition-colors rounded"
                     >
                       View Details
                     </Link>
@@ -51,7 +51,7 @@ export default function Page() {
           )}
           <div className="mt-6">
             <Link href="/company/careers/open-positions" className="text-[#0066a4] font-semibold hover:underline">
-              View all open positions →
+              View all open positions â†’
             </Link>
           </div>
         </div>
@@ -65,3 +65,4 @@ export default function Page() {
     </>
   );
 }
+

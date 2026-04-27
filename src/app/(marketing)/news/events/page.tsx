@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
@@ -34,7 +34,7 @@ export default function Page() {
                   </div>
                 )}
                 <div className="p-5 flex flex-col justify-center">
-                  <p className="text-sm text-[#e87722] font-semibold mb-1">{formatDate(event.date)}</p>
+                  <p className="text-sm text-[#0066a4] font-semibold mb-1">{formatDate(event.date)}</p>
                   <h2 className="text-xl font-bold text-[#003366] mb-2">{event.title}</h2>
                   <p className="text-gray-700">{event.excerpt}</p>
                 </div>
@@ -49,3 +49,4 @@ export default function Page() {
     </>
   );
 }
+

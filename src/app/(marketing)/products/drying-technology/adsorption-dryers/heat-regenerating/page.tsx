@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
@@ -78,7 +78,7 @@ export default function Page() {
                 'Pneumatic box for the protection of sensitive components',
                 'High corrosion resistance due to HT-galvanized piping',
                 'Volume flows 0400 m3;3/h - 9500m3;3/h',
-                'Pressure dew points down to -40°C',
+                'Pressure dew points down to -40Â°C',
               ]}
               imageSrc="/images/products/drying-technology/Heat%20Regenerating%20Dryers/ultra.dry%20HRE.jpg"
               imageAlt="ultra.dry HRE"
@@ -87,10 +87,10 @@ export default function Page() {
             <section className="border-x border-b border-[#d7d7d7] px-4 py-5">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2 text-[14px]">
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download Datasheet HRE <span className="font-normal text-[#666]">(453 KB)</span>
                   </a>
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download Brochure HRE (GB) <span className="font-normal text-[#666]">(409 KB)</span>
                   </a>
                 </div>
@@ -112,8 +112,8 @@ export default function Page() {
                 'Touch display for service- and operation-friendly work',
                 'Pneumatic box for the protection of sensitive components',
                 'High corrosion resistance due to HT-galvanized piping',
-                'Volume flows 0400 m3;3/h – 9500m3;3/h',
-                'Pressure dew points down to -40°C',
+                'Volume flows 0400 m3;3/h â€“ 9500m3;3/h',
+                'Pressure dew points down to -40Â°C',
               ]}
               imageSrc="/images/products/drying-technology/Heat%20Regenerating%20Dryers/VarioBlo.jpeg"
               imageAlt="VarioBlo adsorption dryer"
@@ -122,10 +122,10 @@ export default function Page() {
             <section className="border-x border-b border-[#d7d7d7] px-4 py-5">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2 text-[14px]">
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'}Download Brochure VarioBlo <span className="font-normal text-[#666]">(1.070 KB)</span>
                   </a>
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'}Download Brochure VarioBlo (GB) <span className="font-normal text-[#666]">(1.445 KB)</span>
                   </a>
                 </div>
@@ -147,8 +147,8 @@ export default function Page() {
                 'Touch display for service- and operation-friendly work',
                 'Pneumatic box for the protection of sensitive components',
                 'High corrosion resistance due to HT-galvanized piping',
-                'Volume flows 0400 m3;3/h – 9500m3;3/h',
-                'Pressure dew points down to -70°C',
+                'Volume flows 0400 m3;3/h â€“ 9500m3;3/h',
+                'Pressure dew points down to -70Â°C',
               ]}
               imageSrc="/images/products/drying-technology/Heat%20Regenerating%20Dryers/VarioBlo%20Loop.jpg"
               imageAlt="VarioBlo Loop adsorption dryer"
@@ -157,10 +157,10 @@ export default function Page() {
             <section className="border-x border-b border-[#d7d7d7] px-4 py-5">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2 text-[14px]">
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'}Download Brochure VarioBlo <span className="font-normal text-[#666]">(1.070 KB)</span>
                   </a>
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'}Download Brochure VarioBlo (GB) <span className="font-normal text-[#666]">(1.445 KB)</span>
                   </a>
                 </div>
@@ -171,7 +171,7 @@ export default function Page() {
             </section>
 
             <section className="mt-6 border border-[#d7d7d7] bg-white">
-              <div className="border-b border-[#1f4567]/30 bg-[#0a4c79] px-3 py-1.5 text-sm font-medium text-white">CompHeat³</div>
+              <div className="border-b border-[#1f4567]/30 bg-[#0a4c79] px-3 py-1.5 text-sm font-medium text-white">CompHeatÂ³</div>
               <div className="grid grid-cols-1 gap-8 p-4 md:grid-cols-[1fr_220px]">
                 <p className="text-[13px] leading-7 text-[#3f3f3f]">CompHeat90000</p>
                 <div className="flex items-center justify-center">
@@ -191,7 +191,7 @@ export default function Page() {
             <div className="mt-6 text-right">
               <a
                 href="/products/drying-technology/adsorption-dryers/heat-regenerating"
-                className="text-sm font-semibold text-[#123f66] hover:text-[#e87722]"
+                className="text-sm font-semibold text-[#123f66] hover:text-[#0066a4]"
               >
                 Printable Version
               </a>
@@ -208,3 +208,4 @@ export default function Page() {
     </>
   );
 }
+

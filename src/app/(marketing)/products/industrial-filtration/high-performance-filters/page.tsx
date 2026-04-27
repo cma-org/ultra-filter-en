@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
@@ -74,7 +74,7 @@ export default function Page() {
                   <div className="space-y-2 pb-2">
                     {row.downloads.map((download) => (
                       <div key={download.label} className="flex items-center justify-between gap-3">
-                        <a href="/downloads" className="text-sm font-semibold text-[#003366] hover:text-[#e87722]">
+                        <a href="/downloads" className="text-sm font-semibold text-[#003366] hover:text-[#0066a4]">
                           {'>>'} {download.label} <span className="font-normal text-[#555]">{download.size}</span>
                         </a>
                         <span className="inline-flex h-10 w-10 items-center justify-center rounded bg-[#a31515] text-[10px] font-bold text-white shadow">
@@ -94,3 +94,4 @@ export default function Page() {
     </>
   );
 }
+

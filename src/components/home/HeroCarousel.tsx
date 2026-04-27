@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
@@ -77,7 +77,7 @@ export default function HeroCarousel({ slides, interval = 5000 }: HeroCarouselPr
             </p>
             <Link
               href={slide.ctaHref}
-              className="inline-block bg-[#e87722] hover:bg-orange-600 text-white font-bold px-8 py-3 rounded text-sm transition-colors"
+              className="inline-block border border-white bg-transparent text-white hover:bg-white hover:text-[#003366] font-bold px-8 py-3 rounded text-sm transition-colors"
             >
               {slide.ctaLabel}
             </Link>
@@ -94,7 +94,7 @@ export default function HeroCarousel({ slides, interval = 5000 }: HeroCarouselPr
             aria-label={`Go to slide ${i + 1}`}
             className={cn(
               'w-2.5 h-2.5 rounded-full transition-all',
-              i === current ? 'bg-[#e87722] w-6' : 'bg-white/60 hover:bg-white/90'
+              i === current ? 'bg-[#0066a4] w-6' : 'bg-white/60 hover:bg-white/90'
             )}
           />
         ))}
@@ -122,3 +122,4 @@ export default function HeroCarousel({ slides, interval = 5000 }: HeroCarouselPr
     </div>
   );
 }
+

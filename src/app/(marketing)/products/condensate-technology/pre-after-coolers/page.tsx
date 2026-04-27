@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import PageHero from '@/components/shared/PageHero';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
@@ -33,7 +33,7 @@ export default function Page() {
             </section>
 
             <div className="mt-8 text-right">
-              <a href="/products/condensate-technology/pre-after-coolers" className="text-sm font-semibold text-[#123f66] hover:text-[#e87722]">
+              <a href="/products/condensate-technology/pre-after-coolers" className="text-sm font-semibold text-[#123f66] hover:text-[#0066a4]">
                 Printable version
               </a>
             </div>
@@ -45,3 +45,4 @@ export default function Page() {
     </>
   );
 }
+

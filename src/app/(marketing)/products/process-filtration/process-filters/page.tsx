@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import PageHero from '@/components/shared/PageHero';
 import ContentSection from '@/components/shared/ContentSection';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
@@ -24,11 +24,11 @@ export default function Page() {
               <h3 className="mb-3 text-[12px] font-bold uppercase tracking-[0.25em] text-[#123f66]">Data Sheet</h3>
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2 text-[14px]">
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download Data Sheet Process Filter{' '}
                     <span className="font-normal text-[#666]">(4,626 KB)</span>
                   </a>
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download Brochure Process Filter (GB){' '}
                     <span className="font-normal text-[#666]">(3,851 KB)</span>
                   </a>
@@ -43,7 +43,7 @@ export default function Page() {
             <div className="mt-6 text-right">
               <a
                 href="/products/process-filtration/process-filters"
-                className="text-sm font-semibold text-[#1f4567] hover:text-[#e87722]"
+                className="text-sm font-semibold text-[#1f4567] hover:text-[#0066a4]"
               >
                 Printable version
               </a>
@@ -56,3 +56,4 @@ export default function Page() {
     </>
   );
 }
+

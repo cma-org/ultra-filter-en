@@ -1,4 +1,4 @@
-import Image from 'next/image';
+﻿import Image from 'next/image';
 import Link from 'next/link';
 import { navigation } from '@/content/navigation';
 import { companyInfo } from '@/content/company';
@@ -18,7 +18,7 @@ export default function Footer() {
                 <div className="relative h-12 w-52 sm:h-14 sm:w-60">
                   <Image
                     src="/images/White%20Ultrafilter%20logo-cropped.png"
-                    alt="ultrafilter – The Filtration Manufacturer"
+                    alt="ultrafilter â€“ The Filtration Manufacturer"
                     fill
                     className="object-contain object-left"
                     sizes="(max-width: 640px) 208px, 240px"
@@ -54,7 +54,7 @@ export default function Footer() {
 
           {/* Products nav */}
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-wider mb-4 text-[#e87722]">Products</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-4 text-[#0066a4]">Products</h3>
             <ul className="space-y-1.5 text-sm text-blue-100">
               {navigation.find(n => n.label === 'Products')?.children?.map((cat) => (
                 <li key={cat.href}>
@@ -68,7 +68,7 @@ export default function Footer() {
 
           {/* Services + Company nav */}
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-wider mb-4 text-[#e87722]">Services</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-4 text-[#0066a4]">Services</h3>
             <ul className="space-y-1.5 text-sm text-blue-100 mb-6">
               {navigation.find(n => n.label === 'Services')?.children?.map((item) => (
                 <li key={item.href}>
@@ -78,7 +78,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-            <h3 className="text-sm font-bold uppercase tracking-wider mb-3 text-[#e87722]">Company</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-3 text-[#0066a4]">Company</h3>
             <ul className="space-y-1.5 text-sm text-blue-100">
               {navigation.find(n => n.label === 'Company')?.children?.map((item) => (
                 <li key={item.href}>
@@ -92,18 +92,18 @@ export default function Footer() {
 
           {/* Newsletter + Quick links */}
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-wider mb-4 text-[#e87722]">Stay Informed</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-4 text-[#0066a4]">Stay Informed</h3>
             <p className="text-sm text-blue-100 mb-4">
               Subscribe to our newsletter for product updates, technical articles, and industry news.
             </p>
             <Link
               href="/news/newsletter"
-              className="inline-block bg-[#e87722] hover:bg-orange-600 text-white px-5 py-2.5 rounded font-semibold text-sm transition-colors mb-6"
+              className="inline-block border border-white bg-transparent text-white hover:bg-white hover:text-[#003366] px-5 py-2.5 rounded font-semibold text-sm transition-colors mb-6"
             >
               Subscribe
             </Link>
 
-            <h3 className="text-sm font-bold uppercase tracking-wider mb-3 text-[#e87722]">Quick Links</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-3 text-[#0066a4]">Quick Links</h3>
             <ul className="space-y-1.5 text-sm text-blue-100">
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
               <li><Link href="/downloads" className="hover:text-white transition-colors">Downloads</Link></li>
@@ -111,7 +111,7 @@ export default function Footer() {
               <li><Link href="/news/events" className="hover:text-white transition-colors">Events</Link></li>
             </ul>
 
-            <h3 className="text-sm font-bold uppercase tracking-wider mt-5 mb-3 text-[#e87722]">Follow Us</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider mt-5 mb-3 text-[#0066a4]">Follow Us</h3>
             <a
               href="https://www.youtube.com/channel/UC8Tzmwj8P4Zef_nXVjJCO-A"
               target="_blank"
@@ -130,7 +130,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-blue-800 bg-[#002244]">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-blue-300">
-          <p>© {year} ultrafilter GmbH. All rights reserved.</p>
+          <p>Â© {year} ultrafilter GmbH. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/legal-notice" className="hover:text-white transition-colors">Legal Notice</Link>
@@ -141,3 +141,4 @@ export default function Footer() {
     </footer>
   );
 }
+

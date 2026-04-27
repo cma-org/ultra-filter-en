@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
+import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
@@ -27,7 +28,7 @@ const compatibleBrands = [
 export default function Page() {
   return (
     <>
-      <PageHero title={sub.heroTitle || sub.title} subtitle={sub.description} />
+      <PageHero title={sub.heroTitle || sub.title} subtitle={sub.description} image={sub.image} />
       <Breadcrumbs items={[{ label: 'Products', href: '/products' }, { label: 'Industrial Filtration', href: '/products/industrial-filtration' }, { label: sub.title, href: `/products/industrial-filtration/${sub.slug}` }]} />
       <div className="max-w-7xl mx-auto px-4 py-10">
         <div className="flex flex-col lg:flex-row gap-8">
@@ -39,17 +40,30 @@ export default function Page() {
                 <div className="border-b border-[#1f4567]/30 bg-[#0a4c79] px-3 py-1.5 text-xs font-semibold text-white">
                   Compatible Replacement Elements
                 </div>
-                <div className="space-y-4 p-4 text-sm leading-relaxed text-[#2b2b2b]">
-                  <p>
-                    ultrafilter supplies high-quality replacement elements that are compatible with most major brands of
-                    compressed air filter housings and oil-water separators. All replacement elements are manufactured to
-                    the same quality standards as original ultrafilter elements.
-                  </p>
-                  <p>
-                    We maintain a comprehensive database of cross-references to ensure the correct element is identified
-                    for every application. If in doubt, contact our technical team with the original element part number
-                    and housing model.
-                  </p>
+                <div className="grid grid-cols-1 gap-5 p-4 md:grid-cols-[1fr_260px]">
+                  <div className="space-y-4 text-sm leading-relaxed text-[#2b2b2b]">
+                    <p>
+                      ultrafilter supplies high-quality replacement elements that are compatible with most major brands of
+                      compressed air filter housings and oil-water separators. All replacement elements are manufactured to
+                      the same quality standards as original ultrafilter elements.
+                    </p>
+                    <p>
+                      We maintain a comprehensive database of cross-references to ensure the correct element is identified
+                      for every application. If in doubt, contact our technical team with the original element part number
+                      and housing model.
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <div className="relative h-[220px] w-full max-w-[240px] overflow-hidden rounded border border-[#d9d9d9] bg-white">
+                      <Image
+                        src="/images/products/Industrial%20filtration/Replacement%20Filters.jpg"
+                        alt="Replacement Filters"
+                        fill
+                        className="object-contain p-2"
+                        sizes="240px"
+                      />
+                    </div>
+                  </div>
                 </div>
               </section>
 
@@ -81,7 +95,7 @@ export default function Page() {
                     contracts.
                   </p>
                   <div className="flex items-center justify-between gap-3 border-t border-[#ececec] pt-3">
-                    <a href="/downloads" className="text-sm font-semibold text-[#003366] hover:text-[#e87722]">
+                    <a href="/downloads" className="text-sm font-semibold text-[#003366] hover:text-[#0066a4]">
                       {'>>'} Replacement Filter Cross-Reference Guide <span className="font-normal text-[#555]">(EN)</span>
                     </a>
                     <span className="inline-flex h-9 w-9 items-center justify-center rounded bg-[#a31515] text-[10px] font-bold text-white shadow">
@@ -99,3 +113,4 @@ export default function Page() {
     </>
   );
 }
+

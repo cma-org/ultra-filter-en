@@ -1,4 +1,4 @@
-import Image from 'next/image';
+﻿import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 interface PageHeroProps {
@@ -49,8 +49,9 @@ export default function PageHero({
           </p>
         )}
         {/* Accent underline */}
-        <div className="mt-3 w-16 h-1 bg-[#e87722] rounded" />
+        <div className="mt-3 w-16 h-1 bg-[#0066a4] rounded" />
       </div>
     </div>
   );
 }
+

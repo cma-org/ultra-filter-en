@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, FormEvent } from 'react';
 import { cn } from '@/lib/utils';
@@ -177,7 +177,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === 'submitting'}
-        className="bg-[#e87722] hover:bg-orange-600 disabled:bg-gray-400 text-white font-bold px-8 py-3 rounded text-sm transition-colors"
+        className="bg-[#0066a4] hover:bg-[#00558a] disabled:bg-gray-400 text-white font-bold px-8 py-3 rounded text-sm transition-colors"
       >
         {status === 'submitting' ? 'Sending...' : 'Send Message'}
       </button>
@@ -206,3 +206,4 @@ function inputCn(hasError: boolean) {
       : 'border-gray-300 bg-white focus:border-[#0066a4] focus:ring-1 focus:ring-[#0066a4]'
   );
 }
+

@@ -1,4 +1,4 @@
-import { companyInfo } from '@/content/company';
+﻿import { companyInfo } from '@/content/company';
 import { cn } from '@/lib/utils';
 
 interface ContactInfoBlockProps {
@@ -13,7 +13,7 @@ export default function ContactInfoBlock({ className, dark = false }: ContactInf
       dark ? 'bg-[#003366] text-white border-blue-700' : 'bg-[#f5f5f5] border-gray-200',
       className
     )}>
-      <h3 className={cn('font-bold text-base mb-3', dark ? 'text-[#e87722]' : 'text-[#003366]')}>
+      <h3 className={cn('font-bold text-base mb-3', dark ? 'text-[#0066a4]' : 'text-[#003366]')}>
         Contact Us
       </h3>
       <address className="not-italic text-sm leading-relaxed space-y-1">
@@ -48,3 +48,4 @@ export default function ContactInfoBlock({ className, dark = false }: ContactInf
     </div>
   );
 }
+

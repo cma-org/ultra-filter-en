@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
@@ -28,7 +28,7 @@ export default function Page() {
                 <div className="space-y-2 text-[13px] leading-7 text-[#3f3f3f]">
                   <p>AG-Z aluminium housing with threaded connection</p>
                   <p>- Volume flows from 125 m3;3/h to 2,250 m3;3/h</p>
-                  <p>- Maximum operating temperature 120° C</p>
+                  <p>- Maximum operating temperature 120Â° C</p>
                   <p>- Maximum operating overpressure 16 bar</p>
                 </div>
                 <div className="flex items-center justify-center">
@@ -53,7 +53,7 @@ export default function Page() {
                 <div className="space-y-2 text-[13px] leading-7 text-[#3f3f3f]">
                   <p>SG-Z steel housing with flange connection</p>
                   <p>- Volume flows from 2,400 m3;3/h to 15,000 m3;3/h</p>
-                  <p>- Maximum operating temperature 65° C</p>
+                  <p>- Maximum operating temperature 65Â° C</p>
                   <p>- Maximum operating overpressure 12 bar</p>
                 </div>
                 <div className="flex items-center justify-center">
@@ -71,7 +71,7 @@ export default function Page() {
             </section>
 
             <div className="mt-8 text-right">
-              <a href="/products/condensate-technology/cyclone-separators" className="text-sm font-semibold text-[#123f66] hover:text-[#e87722]">
+              <a href="/products/condensate-technology/cyclone-separators" className="text-sm font-semibold text-[#123f66] hover:text-[#0066a4]">
                 Printable version
               </a>
             </div>
@@ -83,3 +83,4 @@ export default function Page() {
     </>
   );
 }
+

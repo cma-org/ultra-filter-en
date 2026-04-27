@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -37,10 +37,10 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <span className="hidden sm:block">Die Aufbereitungsexperten | The Filtration Manufacturer</span>
           <div className="flex items-center gap-4">
-            <a href="tel:+4921033360" className="hover:text-orange-300 transition-colors">
+            <a href="tel:+4921033360" className="hover:text-[#9fd3ff] transition-colors">
               +49 (0) 2103 3336-0
             </a>
-            <a href="mailto:info@ultra-filter.de" className="hover:text-orange-300 transition-colors hidden sm:block">
+            <a href="mailto:info@ultra-filter.de" className="hover:text-[#9fd3ff] transition-colors hidden sm:block">
               info@ultra-filter.de
             </a>
             <a
@@ -53,7 +53,7 @@ export default function Header() {
               <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
               <span className="text-xs">YouTube</span>
             </a>
-            <Link href="/contact" className="bg-[#e87722] hover:bg-orange-600 text-white px-3 py-0.5 rounded text-xs font-semibold transition-colors">
+            <Link href="/contact" className="border border-white bg-transparent text-white hover:bg-white hover:text-[#003366] px-3 py-0.5 rounded text-xs font-semibold transition-colors">
               Contact
             </Link>
           </div>
@@ -68,7 +68,7 @@ export default function Header() {
             <div className="relative h-12 w-56 min-w-[11rem] sm:h-14 sm:w-64 sm:min-w-[14rem] md:h-14 md:w-72">
               <Image
                 src="/images/ultrafilter%20logo.png"
-                alt="ultrafilter – The Filtration Manufacturer"
+                alt="ultrafilter â€“ The Filtration Manufacturer"
                 fill
                 className="object-contain object-left"
                 sizes="(max-width: 640px) 224px, (max-width: 768px) 256px, 288px"
@@ -85,8 +85,8 @@ export default function Header() {
                   className={cn(
                     'flex items-center gap-1 px-4 py-5 text-sm font-semibold transition-colors border-b-2',
                     activeMenu === item.href
-                      ? 'text-[#003366] border-[#e87722]'
-                      : 'text-gray-700 border-transparent hover:text-[#003366] hover:border-[#e87722]'
+                      ? 'text-[#003366] border-[#0066a4]'
+                      : 'text-gray-700 border-transparent hover:text-[#003366] hover:border-[#0066a4]'
                   )}
                   onMouseEnter={() => item.children && setActiveMenu(item.href)}
                   onClick={() => setActiveMenu(activeMenu === item.href ? null : item.href)}
@@ -104,7 +104,7 @@ export default function Header() {
                 {item.children && activeMenu === item.href && (
                   <div
                     className={cn(
-                      'absolute top-full z-50 animate-in border-t-2 border-[#e87722] bg-white shadow-xl fade-in duration-150',
+                      'absolute top-full z-50 animate-in border-t-2 border-[#0066a4] bg-white shadow-xl fade-in duration-150',
                       item.children.some(c => c.children)
                         ? 'left-1/2 w-screen max-w-none -translate-x-1/2'
                         : 'right-0 w-[min(92vw,360px)]'
@@ -118,7 +118,7 @@ export default function Header() {
                           <div key={cat.href} className="mb-3 pr-6">
                             <Link
                               href={cat.href}
-                              className="mb-2 block text-base font-bold text-[#003366] transition-colors hover:text-[#e87722]"
+                              className="mb-2 block text-base font-bold text-[#003366] transition-colors hover:text-[#0066a4]"
                               onClick={() => setActiveMenu(null)}
                             >
                               {cat.label}
@@ -130,7 +130,7 @@ export default function Header() {
                               <Link
                                 key={sub.href}
                                 href={sub.href}
-                                className="block border-l-2 border-transparent py-0.5 pl-2 text-sm text-gray-600 transition-colors hover:border-[#e87722] hover:text-[#0066a4]"
+                                className="block border-l-2 border-transparent py-0.5 pl-2 text-sm text-gray-600 transition-colors hover:border-[#0066a4] hover:text-[#0066a4]"
                                 onClick={() => setActiveMenu(null)}
                               >
                                 {sub.label}
@@ -235,7 +235,7 @@ export default function Header() {
               </div>
             ))}
             <div className="mt-4 pt-4 border-t border-gray-200 space-y-2">
-              <Link href="/contact" className="block w-full text-center bg-[#e87722] text-white py-2.5 rounded font-semibold text-sm" onClick={() => setMobileOpen(false)}>
+              <Link href="/contact" className="block w-full text-center border border-white bg-transparent text-white hover:bg-white hover:text-[#003366] py-2.5 rounded font-semibold text-sm transition-colors" onClick={() => setMobileOpen(false)}>
                 Contact Us
               </Link>
               <Link href="/downloads" className="block w-full text-center border border-[#003366] text-[#003366] py-2.5 rounded font-semibold text-sm" onClick={() => setMobileOpen(false)}>
@@ -248,3 +248,4 @@ export default function Header() {
     </header>
   );
 }
+

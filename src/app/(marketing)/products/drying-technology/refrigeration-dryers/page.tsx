@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
@@ -24,7 +24,7 @@ export default function Page() {
               </div>
               <div className="grid grid-cols-1 gap-8 p-4 md:grid-cols-[1fr_180px]">
                 <ul className="list-disc space-y-2 pl-5 text-[13px] leading-6 text-[#3f3f3f] marker:text-[#0a4c79]">
-                  <li>3°C Dew Point</li>
+                  <li>3Â°C Dew Point</li>
                   <li>Up to 50% energy savings</li>
                   <li>Improved welds to reduce leakage and for a long service life</li>
                   <li>Easy to install and operate</li>
@@ -48,11 +48,11 @@ export default function Page() {
             <section className="border-x border-b border-[#d7d7d7] px-4 py-5">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2 text-[14px]">
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download datasheet refrigeration dryer ultra.pulse{' '}
                     <span className="font-normal text-[#666]">(1,159 KB)</span>
                   </a>
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download brochure Refrigeration Dryer ultra.pulse (GB){' '}
                     <span className="font-normal text-[#666]">(304 KB)</span>
                   </a>
@@ -70,8 +70,8 @@ export default function Page() {
               <div className="grid grid-cols-1 gap-8 p-4 md:grid-cols-[1fr_180px]">
                 <ul className="list-disc space-y-2 pl-5 text-[13px] leading-6 text-[#3f3f3f] marker:text-[#0a4c79]">
                   <li>Suitable for vessels operating at 60Hz</li>
-                  <li>Max. inlet temperature up to 50°C</li>
-                  <li>3°C dew point</li>
+                  <li>Max. inlet temperature up to 50Â°C</li>
+                  <li>3Â°C dew point</li>
                   <li>Easy to install and operate</li>
                   <li>Incl. time-controlled steam trap TD</li>
                   <li>Optionally with level-controlled steam trap CD</li>
@@ -93,11 +93,11 @@ export default function Page() {
             <section className="border-x border-b border-[#d7d7d7] px-4 py-5">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2 text-[14px]">
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download datasheet refrigeration dryer ultra.pulse{' '}
                     <span className="font-normal text-[#666]">(1,159 KB)</span>
                   </a>
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download brochure Refrigeration Dryer ultra.pulse (GB){' '}
                     <span className="font-normal text-[#666]">(304 KB)</span>
                   </a>
@@ -145,11 +145,11 @@ export default function Page() {
               <h3 className="mb-3 text-[12px] font-bold uppercase tracking-[0.25em] text-[#123f66]">Data Sheet</h3>
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2 text-[14px]">
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download Data Sheet Refrigeration Dryer UDA-UDW{' '}
                     <span className="font-normal text-[#666]">(385 KB)</span>
                   </a>
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download Brochure Refrigeration Dryer UDA UDW (GB){' '}
                     <span className="font-normal text-[#666]">(1,342 KB)</span>
                   </a>
@@ -177,7 +177,7 @@ export default function Page() {
             </section>
 
             <div className="mt-6 text-right">
-              <a href="/products/drying-technology/refrigeration-dryers" className="text-sm font-semibold text-[#1f4567] hover:text-[#e87722]">
+              <a href="/products/drying-technology/refrigeration-dryers" className="text-sm font-semibold text-[#1f4567] hover:text-[#0066a4]">
                 Printable version
               </a>
             </div>
@@ -195,14 +195,14 @@ export default function Page() {
             <div className="border-b border-[#d9d9d9] pb-4 text-[13px] leading-6 text-[#444]">
               <h3 className="mb-2 font-semibold text-[#123f66]">Contact Now</h3>
               <p className="font-semibold">ultrafilter GmbH</p>
-              <p>Otto-Hahn-Straße 1</p>
+              <p>Otto-Hahn-StraÃŸe 1</p>
               <p>40721 Hilden</p>
               <p>Germany</p>
               <p className="mt-2">Tel: +49 (0) 2103 3336-0</p>
               <p>Fax: +49 (0) 2103 3336-36</p>
               <p>
                 eMail:{' '}
-                <a href="mailto:info@ultra-filter.de" className="font-semibold text-[#003366] hover:text-[#e87722]">
+                <a href="mailto:info@ultra-filter.de" className="font-semibold text-[#003366] hover:text-[#0066a4]">
                   info@ultra-filter.de
                 </a>
               </p>
@@ -252,3 +252,4 @@ export default function Page() {
     </>
   );
 }
+

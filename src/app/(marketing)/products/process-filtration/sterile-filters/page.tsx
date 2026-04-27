@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
@@ -64,10 +64,10 @@ export default function Page() {
               </div>
 
               <div className="space-y-3 border-t border-[#d9d9d9] px-4 py-5">
-                <a href="/downloads" className="block text-base font-semibold text-[#003366] hover:text-[#e87722]">
+                <a href="/downloads" className="block text-base font-semibold text-[#003366] hover:text-[#0066a4]">
                   {'>>'}Download Datasheet Sterile Filter P-SRF <span className="font-normal text-[#555]">(830 KB)</span>
                 </a>
-                <a href="/downloads" className="block text-base font-semibold text-[#003366] hover:text-[#e87722]">
+                <a href="/downloads" className="block text-base font-semibold text-[#003366] hover:text-[#0066a4]">
                   {'>>'}Download Brochure Sterile Air Filter P-SRF (GB){' '}
                   <span className="font-normal text-[#555]">(1,040 KB)</span>
                 </a>
@@ -75,7 +75,7 @@ export default function Page() {
             </section>
 
             <div className="mt-7 text-right">
-              <a href="/products/process-filtration/sterile-filters" className="text-sm font-semibold text-[#1f4567] hover:text-[#e87722]">
+              <a href="/products/process-filtration/sterile-filters" className="text-sm font-semibold text-[#1f4567] hover:text-[#0066a4]">
                 Printable version
               </a>
             </div>
@@ -87,3 +87,4 @@ export default function Page() {
     </>
   );
 }
+

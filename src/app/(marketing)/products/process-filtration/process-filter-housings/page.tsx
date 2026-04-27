@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
@@ -63,7 +63,7 @@ export default function Page() {
                     </tr>
                     <tr className="border-b border-[#e8e8e8]">
                       <td className="px-4 py-1.5">Temperature :</td>
-                      <td className="px-4 py-1.5">-25 / + 150 °C</td>
+                      <td className="px-4 py-1.5">-25 / + 150 Â°C</td>
                     </tr>
                     <tr className="border-b border-[#e8e8e8]">
                       <td className="px-4 py-1.5">Connections :</td>
@@ -105,7 +105,7 @@ export default function Page() {
                     </tr>
                     <tr className="border-b border-[#e8e8e8]">
                       <td className="px-4 py-1.5">Temperature :</td>
-                      <td className="px-4 py-1.5">-25 / + 150 °C</td>
+                      <td className="px-4 py-1.5">-25 / + 150 Â°C</td>
                     </tr>
                     <tr className="border-b border-[#e8e8e8]">
                       <td className="px-4 py-1.5">Connections :</td>
@@ -147,7 +147,7 @@ export default function Page() {
                     </tr>
                     <tr className="border-b border-[#e8e8e8]">
                       <td className="px-4 py-1.5">Temperature :</td>
-                      <td className="px-4 py-1.5">-25 / + 150 °C</td>
+                      <td className="px-4 py-1.5">-25 / + 150 Â°C</td>
                     </tr>
                     <tr className="border-b border-[#e8e8e8]">
                       <td className="px-4 py-1.5">Connections :</td>
@@ -183,11 +183,11 @@ export default function Page() {
             <section className="mt-4 border-t border-[#d7d7d7] pt-5">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2 text-[14px]">
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download Datasheet Process Filter Housing P-EG{' '}
                     <span className="font-normal text-[#666]">(439 KB)</span>
                   </a>
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download Brochure Processfilter Housing P EG (GB){' '}
                     <span className="font-normal text-[#666]">(433 KB)</span>
                   </a>
@@ -202,7 +202,7 @@ export default function Page() {
             <div className="mt-6 text-right">
               <a
                 href="/products/process-filtration/process-filter-housings"
-                className="text-sm font-semibold text-[#1f4567] hover:text-[#e87722]"
+                className="text-sm font-semibold text-[#1f4567] hover:text-[#0066a4]"
               >
                 Printable version
               </a>
@@ -221,14 +221,14 @@ export default function Page() {
             <div className="border-b border-[#d9d9d9] pb-4 text-[13px] leading-6 text-[#444]">
               <h3 className="mb-2 font-semibold text-[#123f66]">Contact Now</h3>
               <p className="font-semibold">ultrafilter GmbH</p>
-              <p>Otto-Hahn-Straße 1</p>
+              <p>Otto-Hahn-StraÃŸe 1</p>
               <p>40721 Hilden</p>
               <p>Germany</p>
               <p className="mt-2">Tel: +49 (0) 2103 3336-0</p>
               <p>Fax: +49 (0) 2103 3336-36</p>
               <p>
                 eMail:{' '}
-                <a href="mailto:info@ultra-filter.de" className="font-semibold text-[#003366] hover:text-[#e87722]">
+                <a href="mailto:info@ultra-filter.de" className="font-semibold text-[#003366] hover:text-[#0066a4]">
                   info@ultra-filter.de
                 </a>
               </p>
@@ -278,3 +278,4 @@ export default function Page() {
     </>
   );
 }
+

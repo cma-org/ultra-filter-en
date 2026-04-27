@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
@@ -43,7 +43,7 @@ export default function Page() {
                 <div className="flex items-center justify-center">
                   <div className="relative h-[190px] w-[230px] border border-[#d9d9d9] bg-white shadow-sm">
                     <Image
-                      src="/images/products/Measurement%20technology/displays.jpg"
+                      src="/images/products/display.jpg"
                       alt="Displays and data loggers"
                       fill
                       className="object-contain p-2"
@@ -55,7 +55,7 @@ export default function Page() {
             </section>
 
             <div className="mt-10 text-right">
-              <a href="/products/measurement-technology/displays-data-loggers" className="text-sm font-semibold text-[#123f66] hover:text-[#e87722]">
+              <a href="/products/measurement-technology/displays-data-loggers" className="text-sm font-semibold text-[#123f66] hover:text-[#0066a4]">
                 Printable version
               </a>
             </div>
@@ -67,3 +67,4 @@ export default function Page() {
     </>
   );
 }
+

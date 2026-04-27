@@ -2,16 +2,6 @@ import type { NavItem } from '@/types/navigation';
 
 export const navigation: NavItem[] = [
   {
-    label: 'News',
-    href: '/news',
-    children: [
-      { label: 'Events', href: '/news/events' },
-      { label: 'Articles', href: '/news/articles' },
-      { label: 'Newsletter', href: '/news/newsletter' },
-      { label: 'Customer Reviews', href: '/news/customer-reviews' },
-    ],
-  },
-  {
     label: 'Products',
     href: '/products',
     children: [

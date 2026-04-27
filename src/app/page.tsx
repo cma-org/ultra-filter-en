@@ -119,7 +119,7 @@ export default function HomePage() {
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
                   <Link
                     href="/contact"
-                    className="inline-flex min-w-[220px] items-center justify-center rounded-md bg-[#ef6b57] px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-[#e25842]"
+                    className="inline-flex min-w-[220px] items-center justify-center rounded-md border border-white bg-transparent px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-white hover:text-[#003366]"
                   >
                     Request Service
                   </Link>
@@ -145,7 +145,7 @@ export default function HomePage() {
                   Have a question about our products or services? Need a quotation or technical advice? Our team is ready to help.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <Link href="/contact" className="inline-block bg-[#e87722] hover:bg-orange-600 text-white font-bold px-6 py-2.5 rounded text-sm transition-colors">
+                  <Link href="/contact" className="inline-block border border-[#003366] bg-transparent text-[#003366] hover:bg-white hover:text-[#003366] font-bold px-6 py-2.5 rounded text-sm transition-colors">
                     Send a Message
                   </Link>
                   <Link href="/downloads" className="inline-block border border-[#003366] text-[#003366] hover:bg-[#003366] hover:text-white font-semibold px-6 py-2.5 rounded text-sm transition-colors">

@@ -12,7 +12,7 @@ export default function NewsletterCTA({ compact = false }: NewsletterCTAProps) {
         <p className="text-xs text-gray-600 mb-3">Product updates, technical articles, and industry news — delivered monthly.</p>
         <Link
           href="/news/newsletter"
-          className="inline-block bg-[#e87722] hover:bg-orange-600 text-white text-xs font-semibold px-4 py-2 rounded transition-colors"
+          className="inline-block border border-white bg-transparent text-white hover:bg-white hover:text-[#003366] text-xs font-semibold px-4 py-2 rounded transition-colors"
         >
           Subscribe
         </Link>
@@ -29,7 +29,7 @@ export default function NewsletterCTA({ compact = false }: NewsletterCTAProps) {
         </p>
         <Link
           href="/news/newsletter"
-          className="inline-block bg-[#e87722] hover:bg-orange-600 text-white font-bold px-8 py-3 rounded text-sm transition-colors"
+          className="inline-block border border-white bg-transparent text-white hover:bg-white hover:text-[#003366] font-bold px-8 py-3 rounded text-sm transition-colors"
         >
           Subscribe to Newsletter
         </Link>

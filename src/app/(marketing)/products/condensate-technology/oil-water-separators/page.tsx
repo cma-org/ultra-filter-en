@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
@@ -52,10 +52,10 @@ export default function Page() {
             <section className="mt-6 border-t border-[#d7d7d7] px-1 py-5">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2 text-[14px]">
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download datasheet ultrasep <span className="font-normal text-[#666]">(1,039 KB)</span>
                   </a>
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'} Download Brochure ultra.sep (GB) <span className="font-normal text-[#666]">(1,051 KB)</span>
                   </a>
                 </div>
@@ -66,7 +66,7 @@ export default function Page() {
             </section>
 
             <div className="mt-10 text-right">
-              <a href="/products/condensate-technology/oil-water-separators" className="text-sm font-semibold text-[#123f66] hover:text-[#e87722]">
+              <a href="/products/condensate-technology/oil-water-separators" className="text-sm font-semibold text-[#123f66] hover:text-[#0066a4]">
                 Printable version
               </a>
             </div>
@@ -78,3 +78,4 @@ export default function Page() {
     </>
   );
 }
+

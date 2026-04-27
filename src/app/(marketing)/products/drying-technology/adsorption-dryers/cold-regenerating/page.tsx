@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
@@ -9,7 +9,7 @@ const pageTitle = 'Cold Regenerating Dryers';
 export const metadata: Metadata = {
   title: `${pageTitle} | ultrafilter`,
   description:
-    'Cold regenerating adsorption dryers for pressure dew points down to -70°C. Product overview of compact, heatless, cabinet, maxi, OFA, ALG, AKC and PN40 variants.',
+    'Cold regenerating adsorption dryers for pressure dew points down to -70Â°C. Product overview of compact, heatless, cabinet, maxi, OFA, ALG, AKC and PN40 variants.',
 };
 
 function ProductBlock({
@@ -73,8 +73,8 @@ export default function Page() {
               bullets={[
                 'Compact design',
                 'Installation vertical and horizontal',
-                'Volume flows from 7 m³/h - 620 m³/h',
-                'Pressure dew points down to -70°C',
+                'Volume flows from 7 mÂ³/h - 620 mÂ³/h',
+                'Pressure dew points down to -70Â°C',
                 'Service-friendly integrated broadband power supply for 100-240 VAC, 12-24 VDC, 50-60 Hz and can therefore be used worldwide',
               ]}
               image="/images/products/drying-technology/Refrigeration%20Dryers/Adsorption%20Dryers.jpg"
@@ -84,10 +84,10 @@ export default function Page() {
             <section className="border-x border-b border-[#d7d7d7] px-4 py-5">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2 text-[14px]">
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'}Download brochure ultra.dry compact <span className="font-normal text-[#666]">(817 KB)</span>
                   </a>
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'}Download brochure ultra.dry compact (GB) <span className="font-normal text-[#666]">(804 KB)</span>
                   </a>
                 </div>
@@ -108,9 +108,9 @@ export default function Page() {
                 'UPEC 2012 Electronics Control',
                 'High corrosion resistance due to galvanized pipelines',
                 'Pre- and post-filters (pre-filters incl. steam traps)',
-                'Pressure dew point – 20 °C up to – 70 °C',
+                'Pressure dew point â€“ 20 Â°C up to â€“ 70 Â°C',
                 'Grounding connection',
-                'Volume flows from 50 m3;3/h – 1000 m3;3/h',
+                'Volume flows from 50 m3;3/h â€“ 1000 m3;3/h',
               ]}
               image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/Heatless%20HL.jpg"
               imageAlt="Heatless HL"
@@ -119,10 +119,10 @@ export default function Page() {
             <section className="border-x border-b border-[#d7d7d7] px-4 py-5">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2 text-[14px]">
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'}Download Datasheet Heatless HL <span className="font-normal text-[#666]">(1,137 KB)</span>
                   </a>
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'}Download Brochure Heatless HL (GB) <span className="font-normal text-[#666]">(1,155 KB)</span>
                   </a>
                 </div>
@@ -143,8 +143,8 @@ export default function Page() {
                 'UPEC 2012 Electronics Control',
                 'High corrosion resistance due to galvanized pipelines',
                 'Pre- and post-filters (pre-filters incl. steam traps)',
-                'Pressure dew point – 20 °C up to – 70 °C',
-                'Volume flows from 50 m3;3/h – 1000 m3;3/h',
+                'Pressure dew point â€“ 20 Â°C up to â€“ 70 Â°C',
+                'Volume flows from 50 m3;3/h â€“ 1000 m3;3/h',
               ]}
               image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/Heatless%20HL%20Cabinet.jpg"
               imageAlt="Heatless HL Cabinet"
@@ -157,8 +157,8 @@ export default function Page() {
                 'Pneumatic butterfly valves',
                 'UPEC 2012 Electronics Control',
                 'Pneumatic box for sensitive components',
-                'Pressure dew point – 20 °C up to – 70 °C',
-                'Volume flows from 1400 m3;3/h – 9500 m3;3/h',
+                'Pressure dew point â€“ 20 Â°C up to â€“ 70 Â°C',
+                'Volume flows from 1400 m3;3/h â€“ 9500 m3;3/h',
                 'High corrosion resistance due to HT-galvanized piping',
               ]}
               image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/Heatless%20HL%20Maxi.jpg"
@@ -173,8 +173,8 @@ export default function Page() {
                 'Differential pressure gauge for monitoring the second pre-filter',
                 'Oil Breakthrough Stopcock',
                 'UPEC 2012 Electronics Control',
-                'Pressure dew point – 20 °C up to – 70 °C',
-                'Volume flows from 50 m3;3/h – 1000 m3;3/h',
+                'Pressure dew point â€“ 20 Â°C up to â€“ 70 Â°C',
+                'Volume flows from 50 m3;3/h â€“ 1000 m3;3/h',
               ]}
               image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/OFA.jpg"
               imageAlt="OFA adsorption dryer"
@@ -182,12 +182,12 @@ export default function Page() {
 
             <ProductBlock
               heading="ALG"
-              intro="The ultra.pure breathing air units ALG 0050 – 375 are adsorption dryer-based treatment devices for the provision of breathing air in compliance with all relevant international standards and relevant medical regulations."
+              intro="The ultra.pure breathing air units ALG 0050 â€“ 375 are adsorption dryer-based treatment devices for the provision of breathing air in compliance with all relevant international standards and relevant medical regulations."
               bullets={[
                 'Two-stage pre-filtration',
                 'UPEC 2012 Electronics Control',
-                'Pressure dew point – 20 °C up to – 40 °C',
-                'Volume flows from 50 m3;3/h – 375 m3;3/h',
+                'Pressure dew point â€“ 20 Â°C up to â€“ 40 Â°C',
+                'Volume flows from 50 m3;3/h â€“ 375 m3;3/h',
               ]}
               image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/OFA.jpg"
               imageAlt="ALG breathing air device"
@@ -196,11 +196,11 @@ export default function Page() {
             <section className="border-x border-b border-[#d7d7d7] px-4 py-5">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2 text-[14px]">
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'}Download Data Sheet Breathing Air Device ALG{' '}
                     <span className="font-normal text-[#666]">(695 KB)</span>
                   </a>
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'}Download Brochure Air Breathing System ALG (GB){' '}
                     <span className="font-normal text-[#666]">(402 KB)</span>
                   </a>
@@ -214,7 +214,7 @@ export default function Page() {
             <ProductBlock
               heading="AKC"
               intro="Activated carbon adsorbers AKC are used for the filtration of oil particles and aerosols. In addition, they absorb oil vapours and guarantee a residual oil content of less than 0.003 ppm after drying. An oil indicator monitors the oil content of the adsorber."
-              bullets={['Volume flows 0050 – 9500 m³/h', 'Oil Indicator', 'Pressure gauge']}
+              bullets={['Volume flows 0050 â€“ 9500 mÂ³/h', 'Oil Indicator', 'Pressure gauge']}
               image="/images/products/drying-technology/Cold%20Regenerating%20Dryers/AKC.jpg"
               imageAlt="AKC activated carbon adsorber"
             />
@@ -235,7 +235,7 @@ export default function Page() {
             <div className="mt-8 text-right">
               <a
                 href="/products/drying-technology/adsorption-dryers/cold-regenerating"
-                className="text-sm font-semibold text-[#123f66] hover:text-[#e87722]"
+                className="text-sm font-semibold text-[#123f66] hover:text-[#0066a4]"
               >
                 Printable Version
               </a>
@@ -255,14 +255,14 @@ export default function Page() {
             <div className="border-b border-[#d9d9d9] pb-4 text-[13px] leading-6 text-[#444]">
               <h3 className="mb-2 font-semibold text-[#123f66]">Contact Now</h3>
               <p className="font-semibold">ultrafilter GmbH</p>
-              <p>Otto-Hahn-Straße 1</p>
+              <p>Otto-Hahn-StraÃŸe 1</p>
               <p>40721 Hilden</p>
               <p>Germany</p>
               <p className="mt-2">Tel: +49 (0) 2103 3336-0</p>
               <p>Fax: +49 (0) 2103 3336-36</p>
               <p>
                 eMail:{' '}
-                <a href="mailto:info@ultra-filter.de" className="font-semibold text-[#003366] hover:text-[#e87722]">
+                <a href="mailto:info@ultra-filter.de" className="font-semibold text-[#003366] hover:text-[#0066a4]">
                   info@ultra-filter.de
                 </a>
               </p>
@@ -313,3 +313,4 @@ export default function Page() {
     </>
   );
 }
+

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import PageHero from '@/components/shared/PageHero';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
@@ -12,40 +12,40 @@ const downloads = [
   {
     category: 'Industrial Filtration',
     items: [
-      { label: 'High-Performance Filter Elements — Datasheet', file: '/datasheets/ultrafilter-hfe-datasheet.pdf' },
-      { label: 'High-Performance Filters — Technical Specification', file: '/datasheets/ultrafilter-hpf-spec.pdf' },
-      { label: 'Industrial Filtration — Product Range Overview', file: '/datasheets/ultrafilter-industrial-range.pdf' },
+      { label: 'High-Performance Filter Elements â€” Datasheet', file: '/datasheets/ultrafilter-hfe-datasheet.pdf' },
+      { label: 'High-Performance Filters â€” Technical Specification', file: '/datasheets/ultrafilter-hpf-spec.pdf' },
+      { label: 'Industrial Filtration â€” Product Range Overview', file: '/datasheets/ultrafilter-industrial-range.pdf' },
     ],
   },
   {
     category: 'Process Filtration',
     items: [
-      { label: 'Sterile Filters P-SRF — Datasheet', file: '/datasheets/ultrafilter-srf-datasheet.pdf' },
-      { label: 'Steam Filters P-GS — Technical Data', file: '/datasheets/ultrafilter-gs-datasheet.pdf' },
-      { label: 'Process Filtration — Product Catalogue', file: '/datasheets/ultrafilter-process-catalogue.pdf' },
+      { label: 'Sterile Filters P-SRF â€” Datasheet', file: '/datasheets/ultrafilter-srf-datasheet.pdf' },
+      { label: 'Steam Filters P-GS â€” Technical Data', file: '/datasheets/ultrafilter-gs-datasheet.pdf' },
+      { label: 'Process Filtration â€” Product Catalogue', file: '/datasheets/ultrafilter-process-catalogue.pdf' },
     ],
   },
   {
     category: 'Drying Technology',
     items: [
-      { label: 'Refrigeration Dryers — Performance Data', file: '/datasheets/ultrafilter-rd-performance.pdf' },
-      { label: 'Adsorption Dryers — Technical Specification', file: '/datasheets/ultrafilter-ad-spec.pdf' },
-      { label: 'Membrane Dryers — Datasheet', file: '/datasheets/ultrafilter-membrane-datasheet.pdf' },
+      { label: 'Refrigeration Dryers â€” Performance Data', file: '/datasheets/ultrafilter-rd-performance.pdf' },
+      { label: 'Adsorption Dryers â€” Technical Specification', file: '/datasheets/ultrafilter-ad-spec.pdf' },
+      { label: 'Membrane Dryers â€” Datasheet', file: '/datasheets/ultrafilter-membrane-datasheet.pdf' },
     ],
   },
   {
     category: 'Condensate Technology',
     items: [
-      { label: 'Condensate Drains — Product Overview', file: '/datasheets/ultrafilter-drain-overview.pdf' },
-      { label: 'Oil-Water Separators — Technical Data', file: '/datasheets/ultrafilter-ows-datasheet.pdf' },
+      { label: 'Condensate Drains â€” Product Overview', file: '/datasheets/ultrafilter-drain-overview.pdf' },
+      { label: 'Oil-Water Separators â€” Technical Data', file: '/datasheets/ultrafilter-ows-datasheet.pdf' },
     ],
   },
   {
     category: 'Measurement Technology',
     items: [
-      { label: 'Dew Point Instruments — Datasheet', file: '/datasheets/ultrafilter-dewpoint-datasheet.pdf' },
-      { label: 'Flow Measurement — Technical Data', file: '/datasheets/ultrafilter-flow-datasheet.pdf' },
-      { label: 'Residual Oil Measurement — Datasheet', file: '/datasheets/ultrafilter-oil-datasheet.pdf' },
+      { label: 'Dew Point Instruments â€” Datasheet', file: '/datasheets/ultrafilter-dewpoint-datasheet.pdf' },
+      { label: 'Flow Measurement â€” Technical Data', file: '/datasheets/ultrafilter-flow-datasheet.pdf' },
+      { label: 'Residual Oil Measurement â€” Datasheet', file: '/datasheets/ultrafilter-oil-datasheet.pdf' },
     ],
   },
   {
@@ -80,7 +80,7 @@ export default function Page() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <svg className="w-8 h-8 text-[#e87722] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-8 h-8 text-[#0066a4] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM12 17l-4-4h2.5v-3h3v3H16l-4 4z" />
                   </svg>
                   <span className="text-sm text-gray-700 group-hover:text-[#003366] font-medium leading-snug">{item.label}</span>
@@ -94,3 +94,4 @@ export default function Page() {
     </>
   );
 }
+

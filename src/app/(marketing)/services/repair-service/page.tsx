@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import PageHero from '@/components/shared/PageHero';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
@@ -34,7 +34,7 @@ export default function Page() {
                   {block.heading && <h2 className="text-xl font-bold mb-2">{block.heading}</h2>}
                   {block.body && <p className="mb-4 opacity-90">{block.body}</p>}
                   {block.ctaLabel && block.ctaHref && (
-                    <a href={block.ctaHref} className="inline-block bg-[#e87722] text-white px-6 py-2 font-semibold hover:bg-orange-600 transition-colors">
+                    <a href={block.ctaHref} className="inline-block bg-[#0066a4] text-white px-6 py-2 font-semibold hover:bg-[#00558a] transition-colors">
                       {block.ctaLabel}
                     </a>
                   )}
@@ -51,3 +51,4 @@ export default function Page() {
     </>
   );
 }
+

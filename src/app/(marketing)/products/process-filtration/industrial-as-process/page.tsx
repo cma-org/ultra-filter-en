@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
@@ -98,7 +98,7 @@ Industrial as Process</h2>
             <div className="mt-8 text-right">
               <a
                 href="/products/process-filtration/industrial-as-process"
-                className="text-sm font-semibold text-[#1f4567] hover:text-[#e87722]"
+                className="text-sm font-semibold text-[#1f4567] hover:text-[#0066a4]"
               >
                 Printable version
               </a>
@@ -117,14 +117,14 @@ Industrial as Process</h2>
             <div className="border-b border-[#d9d9d9] pb-4 text-[13px] leading-6 text-[#444]">
               <h3 className="mb-2 font-semibold text-[#123f66]">Contact Now</h3>
               <p className="font-semibold">ultrafilter GmbH</p>
-              <p>Otto-Hahn-Straße 1</p>
+              <p>Otto-Hahn-StraÃŸe 1</p>
               <p>40721 Hilden</p>
               <p>Germany</p>
               <p className="mt-2">Tel: +49 (0) 2103 3336-0</p>
               <p>Fax: +49 (0) 2103 3336-36</p>
               <p>
                 eMail:{' '}
-                <a href="mailto:info@ultra-filter.de" className="font-semibold text-[#003366] hover:text-[#e87722]">
+                <a href="mailto:info@ultra-filter.de" className="font-semibold text-[#003366] hover:text-[#0066a4]">
                   info@ultra-filter.de
                 </a>
               </p>
@@ -174,3 +174,4 @@ Industrial as Process</h2>
     </>
   );
 }
+

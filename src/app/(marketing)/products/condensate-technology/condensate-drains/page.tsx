@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
@@ -54,10 +54,10 @@ export default function Page() {
             <section className="border-x border-b border-[#d7d7d7] px-4 py-5">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2 text-[14px]">
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'}Download Datasheet UAD S012 <span className="font-normal text-[#666]">(458 KB)</span>
                   </a>
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'}Download Brochure UAD S012 (GB) <span className="font-normal text-[#666]">(469 KB)</span>
                   </a>
                 </div>
@@ -101,10 +101,10 @@ export default function Page() {
             <section className="border-x border-b border-[#d7d7d7] px-4 py-5">
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2 text-[14px]">
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'}Download datasheet ultradrain <span className="font-normal text-[#666]">(1.295 KB)</span>
                   </a>
-                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                  <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                     {'>>'}Download brochure ultradrain GB <span className="font-normal text-[#666]">(1.293 KB)</span>
                   </a>
                 </div>
@@ -115,7 +115,7 @@ export default function Page() {
             </section>
 
             <div className="mt-6 text-right">
-              <a href="/products/condensate-technology/condensate-drains" className="text-sm font-semibold text-[#123f66] hover:text-[#e87722]">
+              <a href="/products/condensate-technology/condensate-drains" className="text-sm font-semibold text-[#123f66] hover:text-[#0066a4]">
                 Printable version
               </a>
             </div>
@@ -127,3 +127,4 @@ export default function Page() {
     </>
   );
 }
+

@@ -21,7 +21,7 @@ export default function CTAButton({
   const baseClasses = 'inline-flex items-center justify-center font-semibold rounded transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2';
 
   const variantClasses = {
-    primary: 'bg-[#e87722] hover:bg-orange-600 text-white focus-visible:ring-[#e87722]',
+    primary: 'border border-white bg-transparent text-white hover:bg-white hover:text-[#003366] focus-visible:ring-white',
     secondary: 'bg-[#003366] hover:bg-[#002244] text-white focus-visible:ring-[#003366]',
     outline: 'border-2 border-[#003366] text-[#003366] hover:bg-[#003366] hover:text-white focus-visible:ring-[#003366]',
   };

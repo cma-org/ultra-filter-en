@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -46,7 +46,7 @@ export default function CookieConsent() {
           </button>
           <button
             onClick={accept}
-            className="px-5 py-2 text-sm bg-[#e87722] hover:bg-orange-600 text-white rounded font-semibold transition-colors"
+            className="px-5 py-2 text-sm bg-[#0066a4] hover:bg-[#00558a] text-white rounded font-semibold transition-colors"
           >
             Accept
           </button>
@@ -55,3 +55,4 @@ export default function CookieConsent() {
     </div>
   );
 }
+

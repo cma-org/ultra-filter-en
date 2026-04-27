@@ -1,4 +1,4 @@
-import { cn } from '@/lib/utils';
+﻿import { cn } from '@/lib/utils';
 
 interface SectionHeadingProps {
   title: string;
@@ -16,7 +16,8 @@ export default function SectionHeading({ title, subtitle, align = 'left', classN
           {subtitle}
         </p>
       )}
-      <div className={cn('mt-3 h-1 w-14 bg-[#e87722] rounded', align === 'center' && 'mx-auto')} />
+      <div className={cn('mt-3 h-1 w-14 bg-[#0066a4] rounded', align === 'center' && 'mx-auto')} />
     </div>
   );
 }
+

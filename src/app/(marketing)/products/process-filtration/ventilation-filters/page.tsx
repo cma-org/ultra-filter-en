@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
@@ -57,10 +57,10 @@ export default function Page() {
             <section className="border-x border-b border-[#d7d7d7] px-4 py-5">
               <h3 className="mb-3 text-[12px] font-bold uppercase tracking-[0.25em] text-[#123f66]">Data Sheet</h3>
               <div className="space-y-2 text-[14px]">
-                <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                   {'>>'} Download Datasheet Vent Filter P-BE <span className="font-normal text-[#666]">(924 KB)</span>
                 </a>
-                <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                   {'>>'} Download Brochure Vent Filter P-BE (GB){' '}
                   <span className="font-normal text-[#666]">(1,123 KB)</span>
                 </a>
@@ -106,10 +106,10 @@ export default function Page() {
             <section className="border-x border-b border-[#d7d7d7] px-4 py-5">
               <h3 className="mb-3 text-[12px] font-bold uppercase tracking-[0.25em] text-[#123f66]">Data Sheet</h3>
               <div className="space-y-2 text-[14px]">
-                <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                   {'>>'} Download Datasheet P-BE Housing <span className="font-normal text-[#666]">(370 KB)</span>
                 </a>
-                <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                   {'>>'} Download Brochure P-BE Housing (GB) <span className="font-normal text-[#666]">(364 KB)</span>
                 </a>
               </div>
@@ -133,14 +133,14 @@ export default function Page() {
             <div className="border-b border-[#d9d9d9] pb-4 text-[13px] leading-6 text-[#444]">
               <h3 className="mb-2 font-semibold text-[#123f66]">Contact Now</h3>
               <p className="font-semibold">ultrafilter GmbH</p>
-              <p>Otto-Hahn-Straße 1</p>
-              <p>97218 Hösbach</p>
+              <p>Otto-Hahn-StraÃŸe 1</p>
+              <p>97218 HÃ¶sbach</p>
               <p>Germany</p>
               <p className="mt-2">Tel: +49 (0) 2103 3336-0</p>
               <p>Fax: +49 (0) 2103 3336-36</p>
               <p>
                 eMail:{' '}
-                <a href="mailto:info@ultra-filter.de" className="font-semibold text-[#003366] hover:text-[#e87722]">
+                <a href="mailto:info@ultra-filter.de" className="font-semibold text-[#003366] hover:text-[#0066a4]">
                   info@ultra-filter.de
                 </a>
               </p>
@@ -181,3 +181,4 @@ export default function Page() {
     </>
   );
 }
+

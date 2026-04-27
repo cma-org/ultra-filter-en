@@ -15,7 +15,7 @@ export const industrialFiltration: ProductCategory = {
       title: 'High-Performance Filter Elements',
       description:
         'Nanotechnology-developed filter elements for maximum separation efficiency in compressed air and gas treatment.',
-      image: '/images/products/filter-elements.jpg',
+      image: '/images/products/Industrial%20filtration/High-Performance%20Filter%20Elements.jpg',
       metaTitle: 'High-Performance Filter Elements | ultrafilter',
       metaDescription:
         'ultrafilter high-performance filter elements — nanotechnology-based, multi-layer construction for superior oil, water, and particle separation in compressed air systems.',
@@ -60,7 +60,7 @@ export const industrialFiltration: ProductCategory = {
       title: 'High-Performance Filters',
       description:
         'Complete filter housings for industrial compressed air and gas purification — robust, reliable, and certified.',
-      image: '/images/products/high-performance-filters.jpg',
+      image: '/images/products/Industrial%20filtration/High-Performance%20Filters.jpg',
       metaTitle: 'High-Performance Filters | ultrafilter',
       metaDescription:
         'ultrafilter high-performance filter housings for compressed air — modular design, low pressure drop, available in sizes for 20 to 20,000 m³/h.',
@@ -94,7 +94,7 @@ export const industrialFiltration: ProductCategory = {
       title: 'Replacement Filters',
       description:
         'Compatible replacement filter elements for third-party oil/water separation and filtration systems — quality matched.',
-      image: '/images/products/high-performance-filters.jpg',
+      image: '/images/products/Industrial%20filtration/Replacement%20Filters.jpg',
       metaTitle: 'Replacement Filters for Third-Party Systems | ultrafilter',
       metaDescription:
         'ultrafilter supplies high-quality replacement filter elements compatible with most major brands of compressed air filters and oil-water separators.',

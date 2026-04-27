@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
@@ -31,9 +31,9 @@ export default function Page() {
                     or compressed gases. With quality in mind and knowledge of customer needs, this device has been
                     designed for continuous operation 7 days a week/24 hours.
                   </p>
-                  <p>Depending on the model, the measuring range is 0.1 µm up to 5.0 µm.</p>
+                  <p>Depending on the model, the measuring range is 0.1 Âµm up to 5.0 Âµm.</p>
                   <p>
-                    The measured values show the particle counts per ft³, l or m³ or alternatively in µg / m³.
+                    The measured values show the particle counts per ftÂ³, l or mÂ³ or alternatively in Âµg / mÂ³.
                     Settings can be made via the integrated display, an external ultrafilter display or via the
                     service software.
                   </p>
@@ -53,7 +53,7 @@ export default function Page() {
             </section>
 
             <div className="mt-10 text-right">
-              <a href="/products/measurement-technology/particle-measurement" className="text-sm font-semibold text-[#123f66] hover:text-[#e87722]">
+              <a href="/products/measurement-technology/particle-measurement" className="text-sm font-semibold text-[#123f66] hover:text-[#0066a4]">
                 Printable version
               </a>
             </div>
@@ -65,3 +65,4 @@ export default function Page() {
     </>
   );
 }
+

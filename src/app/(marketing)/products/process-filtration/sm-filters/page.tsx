@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
@@ -19,7 +19,7 @@ export default function Page() {
             <h2 className="mb-4 text-4xl font-light text-[#2f9dbf]">SM-Filter</h2>
             <p className="mb-8 max-w-5xl text-[13px] leading-7 text-[#3e3e3e]">
               Stainless steel filter elements used for particle filtration. The range of filter fineness of these
-              surface filters ranges from 1 µm to 1000 µm.
+              surface filters ranges from 1 Âµm to 1000 Âµm.
             </p>
 
             <section className="border border-[#d7d7d7] bg-white">
@@ -92,10 +92,10 @@ export default function Page() {
             <section className="border border-[#d7d7d7] border-x-0 px-4 py-5">
               <h3 className="mb-3 text-[12px] font-bold uppercase tracking-[0.25em] text-[#123f66]">Data Sheet</h3>
               <div className="space-y-2 text-[14px]">
-                <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                   {'>>'} Download Data Sheet P-SM <span className="font-normal text-[#666]">(749 KB)</span>
                 </a>
-                <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#e87722]">
+                <a href="/downloads" className="block font-semibold text-[#003366] hover:text-[#0066a4]">
                   {'>>'} Download Brochure P-SM (GB) <span className="font-normal text-[#666]">(952 KB)</span>
                 </a>
               </div>
@@ -119,14 +119,14 @@ export default function Page() {
             <div className="border-b border-[#d9d9d9] pb-4 text-[13px] leading-6 text-[#444]">
               <h3 className="mb-2 font-semibold text-[#123f66]">Contact Now</h3>
               <p className="font-semibold">ultrafilter GmbH</p>
-              <p>Otto-Hahn-Straße 1</p>
+              <p>Otto-Hahn-StraÃŸe 1</p>
               <p>40721 Hilden</p>
               <p>Germany</p>
               <p className="mt-2">Tel: +49 (0) 2103 3336-0</p>
               <p>Fax: +49 (0) 2103 3336-36</p>
               <p>
                 eMail:{' '}
-                <a href="mailto:info@ultra-filter.de" className="font-semibold text-[#003366] hover:text-[#e87722]">
+                <a href="mailto:info@ultra-filter.de" className="font-semibold text-[#003366] hover:text-[#0066a4]">
                   info@ultra-filter.de
                 </a>
               </p>
@@ -167,3 +167,4 @@ export default function Page() {
     </>
   );
 }
+

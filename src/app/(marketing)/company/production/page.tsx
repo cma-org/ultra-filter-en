@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
@@ -17,7 +17,7 @@ export default function Page() {
           <div key={i} className={`flex flex-col ${section.image && section.imagePosition === 'right' ? 'lg:flex-row' : section.image ? 'lg:flex-row-reverse' : ''} gap-8 items-start`}>
             <div className="flex-1 min-w-0">
               {section.heading && (
-                <h2 className="text-2xl font-bold text-[#003366] mb-4 pb-2 border-b-2 border-[#e87722]">
+                <h2 className="text-2xl font-bold text-[#003366] mb-4 pb-2 border-b-2 border-[#0066a4]">
                   {section.heading}
                 </h2>
               )}
@@ -26,7 +26,7 @@ export default function Page() {
                 <ul className="mt-4 space-y-2">
                   {section.items.map((item, j) => (
                     <li key={j} className="flex items-start gap-2 text-gray-700">
-                      <span className="mt-1 w-2 h-2 bg-[#e87722] rounded-full shrink-0" />
+                      <span className="mt-1 w-2 h-2 bg-[#0066a4] rounded-full shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -47,3 +47,4 @@ export default function Page() {
     </>
   );
 }
+
