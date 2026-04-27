@@ -2,6 +2,10 @@ import type { NavItem } from '@/types/navigation';
 
 export const navigation: NavItem[] = [
   {
+    label: 'About Us',
+    href: '/company/about-us',
+  },
+  {
     label: 'Products',
     href: '/products',
     children: [
@@ -82,10 +86,9 @@ export const navigation: NavItem[] = [
     ],
   },
   {
-    label: 'Company',
-    href: '/company',
+    label: 'Careers',
+    href: '/company/careers',
     children: [
-      { label: 'About Us', href: '/company/about-us' },
       { label: 'Careers', href: '/company/careers' },
       { label: 'Production', href: '/company/production' },
       { label: 'Research & Development', href: '/company/research-development' },

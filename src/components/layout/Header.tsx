@@ -81,24 +81,31 @@ export default function Header() {
           <nav ref={menuRef} className="hidden lg:flex items-center gap-0" aria-label="Main navigation">
             {navigation.map((item) => (
               <div key={item.href} className="relative">
-                <button
-                  className={cn(
-                    'flex items-center gap-1 px-4 py-5 text-sm font-semibold transition-colors border-b-2',
-                    activeMenu === item.href
-                      ? 'text-[#003366] border-[#0066a4]'
-                      : 'text-gray-700 border-transparent hover:text-[#003366] hover:border-[#0066a4]'
-                  )}
-                  onMouseEnter={() => item.children && setActiveMenu(item.href)}
-                  onClick={() => setActiveMenu(activeMenu === item.href ? null : item.href)}
-                  aria-expanded={activeMenu === item.href}
-                >
-                  {item.label}
-                  {item.children && (
+                {item.children ? (
+                  <button
+                    className={cn(
+                      'flex items-center gap-1 px-4 py-5 text-sm font-semibold transition-colors border-b-2',
+                      activeMenu === item.href
+                        ? 'text-[#003366] border-[#0066a4]'
+                        : 'text-gray-700 border-transparent hover:text-[#003366] hover:border-[#0066a4]'
+                    )}
+                    onMouseEnter={() => setActiveMenu(item.href)}
+                    onClick={() => setActiveMenu(activeMenu === item.href ? null : item.href)}
+                    aria-expanded={activeMenu === item.href}
+                  >
+                    {item.label}
                     <svg className="w-3.5 h-3.5 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
-                  )}
-                </button>
+                  </button>
+                ) : (
+                  <Link
+                    href={item.href}
+                    className="flex items-center gap-1 px-4 py-5 text-sm font-semibold transition-colors border-b-2 text-gray-700 border-transparent hover:text-[#003366] hover:border-[#0066a4]"
+                  >
+                    {item.label}
+                  </Link>
+                )}
 
                 {/* Mega / Dropdown menu */}
                 {item.children && activeMenu === item.href && (
