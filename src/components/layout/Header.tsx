@@ -31,7 +31,7 @@ export default function Header() {
   }, [mobileOpen]);
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="sticky top-0 z-50 bg-white shadow-sm [--header-height:clamp(136px,20vw,168px)]">
       {/* Top bar */}
       <div className="bg-[#003366] text-white text-xs py-1.5">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
@@ -65,16 +65,16 @@ export default function Header() {
 
       {/* Main header */}
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex min-h-[5rem] items-center justify-between py-2 md:min-h-[5.5rem]">
           {/* Logo */}
           <Link href="/" className="flex shrink-0 items-center" aria-label="ultrafilter home">
-            <div className="relative h-12 w-56 min-w-[11rem] sm:h-14 sm:w-64 sm:min-w-[14rem] md:h-14 md:w-72">
+            <div className="relative h-14 w-64 min-w-[15rem] sm:h-16 sm:w-72 sm:min-w-[17rem] md:h-[4.75rem] md:w-80 lg:h-[5rem] lg:w-[22rem] lg:min-w-[20rem]">
               <Image
                 src="/images/ultrafilter%20logo.png"
                 alt="ultrafilter â€“ The Filtration Manufacturer"
                 fill
                 className="object-contain object-left"
-                sizes="(max-width: 640px) 224px, (max-width: 768px) 256px, 288px"
+                sizes="(max-width: 640px) 288px, (max-width: 768px) 328px, (max-width: 1024px) 352px, 368px"
                 priority
               />
             </div>

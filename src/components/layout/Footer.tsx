@@ -23,13 +23,13 @@ export default function Footer() {
           <div>
             <div className="mb-4">
               <Link href="/" className="inline-block" aria-label="ultrafilter home">
-                <div className="relative h-12 w-52 sm:h-14 sm:w-60">
+                <div className="relative h-14 w-64 sm:h-16 sm:w-72 md:h-[4.75rem] md:w-80">
                   <Image
                     src="/images/White%20Ultrafilter%20logo-cropped.png"
                     alt="ultrafilter â€“ The Filtration Manufacturer"
                     fill
                     className="object-contain object-left"
-                    sizes="(max-width: 640px) 208px, 240px"
+                    sizes="(max-width: 640px) 288px, (max-width: 768px) 328px, 352px"
                   />
                 </div>
               </Link>

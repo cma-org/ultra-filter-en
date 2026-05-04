@@ -20,7 +20,7 @@
 
 /* Sticky header offset for anchor links (#id) */
 :root {
-  --header-sticky-offset: 7.5rem;
+  --header-sticky-offset: clamp(136px, 20vw, 168px);
 }
 
 @media (prefers-reduced-motion: no-preference) {
