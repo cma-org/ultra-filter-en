@@ -5,7 +5,7 @@ export const industrialFiltration: ProductCategory = {
   title: 'Industrial Filtration',
   description:
     'High-performance filter elements and housings for compressed air and technical gas purification — developed using nanotechnology and manufactured to the highest quality standards.',
-  image: '/images/products/industrial-filtration.jpg',
+  image: '/images/products/industrial-filtration-hero.jpg',
   metaTitle: 'Industrial Filtration – Filter Elements & Housings',
   metaDescription:
     'High-performance filter elements and housings for compressed air purification. ultrafilter — The Filtration Manufacturer.',
@@ -41,13 +41,13 @@ export const industrialFiltration: ProductCategory = {
         },
         {
           heading: 'Technical Data',
-          body: '<p>Elements are available for volume flows from 20 to 20,000 m³/h and operating pressures up to 16 bar. All elements are manufactured in Germany and certified to ISO 12500 and ISO 8573-1.</p>',
+          body: '<p>Elements are available for volume flows from 20 to 20,000 m³/h and operating pressures up to 16 bar. Genuine ultrafilter elements are produced within the ultrafilter manufacturing network and certified to ISO 12500 and ISO 8573-1.</p>',
           specs: [
             { label: 'Volume flow range', value: '20 – 20,000 m³/h' },
             { label: 'Operating pressure', value: 'up to 16 bar' },
             { label: 'Operating temperature', value: '+1 °C to +66 °C' },
             { label: 'Standards', value: 'ISO 12500, ISO 8573-1' },
-            { label: 'Origin', value: 'Made in Germany' },
+            { label: 'Origin', value: 'ultrafilter manufacturing network' },
           ],
           datasheets: [
             { label: 'Filter Element Data Sheet (EN)', href: '/datasheets/ultrafilter-filter-elements-en.pdf', language: 'EN' },

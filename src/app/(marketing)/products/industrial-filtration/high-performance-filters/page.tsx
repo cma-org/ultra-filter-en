@@ -13,7 +13,7 @@ export const metadata: Metadata = { title: sub.metaTitle, description: sub.metaD
 const housingRows = [
   {
     title: 'ultrafilter AG housing',
-    image: '/HPF/uf%20AG%20housing.jpeg',
+    image: '/images/products/Industrial%20filtration/HPF/uf%20AG%20housing.jpeg',
     downloads: [
       { label: 'Download Datasheet Filter Housing', size: '(1,365 KB)' },
       { label: 'Download Brochure Filter Housing (GB)', size: '(1,641 KB)' },
@@ -23,7 +23,7 @@ const housingRows = [
   },
   {
     title: 'ultrafilter AG Superplus housing',
-    image: '/HPF/uf%20AG%20superplus%20housing.jpeg',
+    image: '/images/products/Industrial%20filtration/HPF/uf%20AG%20superplus%20housing.jpeg',
     downloads: [
       { label: 'Download datasheet filter housing ultra.plus', size: '(490 KB)' },
       { label: 'Download brochure Filter Housing ultra.plus (GB)', size: '(470 KB)' },
@@ -31,7 +31,7 @@ const housingRows = [
   },
   {
     title: 'ultrafilter SG housing',
-    image: '/HPF/uf%20SG%20housing.jpeg',
+    image: '/images/products/Industrial%20filtration/HPF/uf%20SG%20housing.jpeg',
     downloads: [
       { label: 'Download Datasheet Filter Housing SG Superplus', size: '(681 KB)' },
       { label: 'Download Brochure Filter Housing SG Superplus (GB)', size: '(686 KB)' },

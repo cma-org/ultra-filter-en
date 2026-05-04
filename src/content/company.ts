@@ -1,21 +1,22 @@
 export const companyInfo = {
-  name: 'ultrafilter GmbH',
+  name: 'Ultrafilter (India) Pvt. Ltd.',
   tagline: 'The Filtration Manufacturer',
   taglineDe: 'Die Aufbereitungsexperten',
-  vdma: 'VDMA Member No. 6136',
+  /** Optional membership line (e.g. industry association). Leave empty to hide in footer/sidebars. */
+  vdma: '',
   address: {
-    street: 'Im Hülsenfeld 13',
-    city: '40721 Hilden',
-    country: 'Germany',
+    headline: 'Registered Office & Works',
+    lines: ['Plot No. 70, Bommasandra Indl. Area', 'Bangalore - 560 099, Karnataka, INDIA'],
   },
-  phone: '+49 (0) 2103 3336-0',
-  fax: '+49 (0) 2103 3336-36',
-  email: 'info@ultra-filter.de',
-  emailDisplay: 'info(at)ultra-filter.de',
-  ukPhone: '+44 (0) 1432 367975',
-  website: 'www.ultra-filter.de',
+  phone: '+91-80-4142 9900/2783 2051',
+  /** Primary number for tel: links */
+  phoneTel: '+918041429900',
+  fax: undefined as string | undefined,
+  email: 'info@ultrafilterindia.com',
+  emailDisplay: 'info@ultrafilterindia.com',
+  website: 'www.ultrafilterindia.com',
   description:
-    'ultrafilter GmbH is an owner-operated, premium manufacturer of filtration and gas treatment components for compressed air systems. As the only independently owned German manufacturer in this field, we serve customers in over 30 countries worldwide.',
+    'Ultrafilter (India) Pvt. Ltd. supplies compressed air filtration, drying, condensate management, and measurement technology across India — backed by the ultrafilter product range and engineering standards.',
   founded: '1973',
   employees: '100+',
   certifications: ['ISO 9001:2015', 'ISO 14001:2015'],
@@ -25,7 +26,7 @@ export const heroSlides = [
   {
     image: '/images/home/h-1.jpg',
     heading: 'The Filtration Manufacturer',
-    subheading: 'Premium compressed air filtration — engineered and manufactured in Germany.',
+    subheading: 'Premium compressed air filtration — engineered to ultrafilter standards, supplied from India.',
     ctaLabel: 'Explore Products',
     ctaHref: '/products',
   },

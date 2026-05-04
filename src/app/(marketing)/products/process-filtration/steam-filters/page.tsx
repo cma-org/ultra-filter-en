@@ -4,6 +4,7 @@ import PageHero from '@/components/shared/PageHero';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import { processFiltration } from '@/content/products/process-filtration';
+import ContactSidebarPlain from '@/components/shared/ContactSidebarPlain';
 
 const sub = processFiltration.subcategories.find(s => s.slug === 'steam-filters')!;
 export const metadata: Metadata = { title: sub.metaTitle, description: sub.metaDescription };
@@ -99,19 +100,7 @@ export default function Page() {
               <p className="mt-1 text-[10px] text-[#888]">Powered by Google Translate</p>
             </div>
 
-            <div className="border-b border-[#d9d9d9] pb-4 text-[13px] leading-6 text-[#444]">
-              <h3 className="mb-2 font-semibold text-[#123f66]">Contact Now</h3>
-              <p className="font-semibold">ultrafilter GmbH</p>
-              <p>Otto-Hahn-StraÃŸe 1</p>
-              <p>97218 HÃ¶sbach</p>
-              <p>Germany</p>
-              <p className="mt-2">Tel: +49 (0) 6103 3336-0</p>
-              <p>Fax: +49 (0) 6103 3336-36</p>
-              <p>
-                eMail: <a href="mailto:info@ultra-filter.de" className="font-semibold text-[#003366] hover:text-[#0066a4]">info@ultra-filter.de</a>
-              </p>
-              <p className="mt-2 text-[12px] text-[#666]">Member of VDMA - No. 6136</p>
-            </div>
+            <ContactSidebarPlain />
 
             <div className="border-b border-[#d9d9d9] pb-4">
               <h3 className="mb-2 text-[13px] font-semibold text-[#123f66]">Job advertisement</h3>
@@ -131,7 +120,7 @@ export default function Page() {
 
             <div>
               <h3 className="mb-2 text-[13px] font-semibold text-[#123f66]">Ultrafilters worldwide</h3>
-              <p className="text-sm text-[#555]">Germany â€¢ Switzerland â€¢ Mexico</p>
+              <p className="text-sm text-[#555]">India · Global ultrafilter network</p>
             </div>
           </aside>
         </div>

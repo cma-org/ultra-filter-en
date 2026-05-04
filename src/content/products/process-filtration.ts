@@ -5,7 +5,7 @@ export const processFiltration: ProductCategory = {
   title: 'Process Filtration',
   description:
     'Sterile and process filtration solutions for the food, beverage, and pharmaceutical industries — depth filters, process filter housings, and integrated sterile filtration systems.',
-  image: '/images/products/process-filtration.jpg',
+  image: '/images/products/process-filtration-hero.jpg',
   metaTitle: 'Process Filtration – Sterile Filters & Process Filter Systems',
   metaDescription:
     'ultrafilter process filtration products: sterile filters, steam filters, ventilation filters, and complete stainless steel filter systems for hygienic applications.',

@@ -3,13 +3,13 @@ import type { CompanyPage } from '@/types/company';
 export const aboutUs: CompanyPage = {
   title: 'About Us',
   metaTitle: 'About ultrafilter – The Filtration Manufacturer',
-  metaDescription: 'ultrafilter GmbH — an owner-operated, premium manufacturer of compressed air filtration and gas treatment components. Based in Hilden, Germany. Active in 30+ countries.',
+  metaDescription: 'Ultrafilter (India) Pvt. Ltd. — compressed air filtration and gas treatment for industry across India. Registered office in Bangalore.',
   heroTitle: 'About ultrafilter',
-  intro: 'ultrafilter GmbH is an owner-operated, premium manufacturer of filtration and compressed air treatment components — and the only independently owned German company in this field.',
+  intro: 'Ultrafilter (India) Pvt. Ltd. brings the ultrafilter product range to customers throughout India — with local sales, application support, and service from our registered office in Bangalore.',
   sections: [
     {
       heading: 'The Filtration Manufacturer',
-      body: '<p>Founded and continuously owner-operated, ultrafilter GmbH has grown into a globally recognised manufacturer of compressed air and gas treatment products. From our headquarters in Hilden, Germany, we develop, manufacture, and distribute high-performance filtration, drying, condensate management, and measurement technology to customers in over 30 countries.</p><p>Unlike many competitors, we remain independently owned — which means our decisions are driven by engineering excellence and long-term customer relationships, not short-term shareholder returns.</p>',
+      body: '<p>Ultrafilter (India) Pvt. Ltd. is part of the ultrafilter family of companies, recognised worldwide for compressed air and gas treatment products. We supply high-performance filtration, drying, condensate management, and measurement technology to Indian industry — backed by global product standards and engineering expertise.</p><p>Our focus is on reliable performance, responsive support, and long-term partnerships with customers who depend on clean, dry compressed air every day.</p>',
       image: '/images/company/headquarters.jpg',
       imagePosition: 'right',
     },
@@ -31,7 +31,7 @@ export const aboutUs: CompanyPage = {
     },
     {
       heading: 'Service',
-      body: '<p>The ultrafilter service team carries out repair, maintenance, and inspection work on ultrafilter equipment and selected third-party products. Factory-trained engineers are based in Germany with field capability throughout Europe.</p>',
+      body: '<p>The ultrafilter service team carries out repair, maintenance, and inspection work on ultrafilter equipment and selected third-party products. Factory-trained engineers support customers across India from our Bangalore operations.</p>',
     },
     {
       heading: 'Finance & Accounting',

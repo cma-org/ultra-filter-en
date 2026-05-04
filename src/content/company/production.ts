@@ -2,14 +2,14 @@ import type { CompanyPage } from '@/types/company';
 
 export const productionPage: CompanyPage = {
   title: 'Production',
-  metaTitle: 'Production – Made in Germany | ultrafilter',
-  metaDescription: 'ultrafilter manufactures filtration and gas treatment components at its Hilden, Germany facility — with in-house design, quality management, and all relevant certifications.',
+  metaTitle: 'Production & Quality | ultrafilter India',
+  metaDescription: 'How Ultrafilter (India) Pvt. Ltd. ensures product quality, traceability, and support for the ultrafilter range supplied to the Indian market.',
   heroTitle: 'Production',
-  intro: 'Every ultrafilter product is designed, manufactured, and quality-assured at our Hilden facility — giving us complete control over quality at every stage of production.',
+  intro: 'Ultrafilter (India) Pvt. Ltd. works with the global ultrafilter supply chain and certified manufacturing partners so customers in India receive genuine products, documented quality, and dependable performance.',
   sections: [
     {
-      heading: 'Production in Germany',
-      body: '<p>ultrafilter manufactures the complete product range at its headquarters in Hilden, North Rhine-Westphalia. Manufacturing in Germany allows us to maintain close control over quality, respond quickly to customer requirements, and ensure short delivery times. All production equipment is regularly calibrated and maintained to ensure consistent output quality.</p>',
+      heading: 'Quality & Supply Chain',
+      body: '<p>Products supplied through Ultrafilter (India) Pvt. Ltd. are sourced and controlled to meet ultrafilter specifications. We maintain traceability, documented acceptance criteria, and alignment with the same engineering standards that define the ultrafilter range worldwide.</p>',
       image: '/images/company/production-floor.jpg',
       imagePosition: 'right',
     },
@@ -19,7 +19,7 @@ export const productionPage: CompanyPage = {
     },
     {
       heading: 'Quality Management',
-      body: '<p>ultrafilter operates an integrated quality management system certified to ISO 9001:2015. Every product leaving our facility is inspected against documented acceptance criteria. Batch records and test results are retained to provide full traceability. Our quality team conducts regular internal audits and manages supplier qualification to ensure consistent input material quality.</p>',
+      body: '<p>ultrafilter operates an integrated quality management system certified to ISO 9001:2015. Products supplied through our channels are inspected against documented acceptance criteria. Batch records and test results are retained to provide traceability. Our quality team conducts audits and manages supplier qualification to ensure consistent material and product quality.</p>',
     },
     {
       heading: 'Certifications & Approvals',

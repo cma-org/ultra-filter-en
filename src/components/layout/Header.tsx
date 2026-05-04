@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
 import { navigation } from '@/content/navigation';
+import { companyInfo } from '@/content/company';
 import type { NavItem } from '@/types/navigation';
 import { cn } from '@/lib/utils';
 
@@ -37,11 +38,14 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <span className="hidden sm:block">Die Aufbereitungsexperten | The Filtration Manufacturer</span>
           <div className="flex items-center gap-4">
-            <a href="tel:+4921033360" className="hover:text-[#9fd3ff] transition-colors">
-              +49 (0) 2103 3336-0
+            <a
+              href={`tel:${companyInfo.phoneTel ?? companyInfo.phone.replace(/[^\d+]/g, '')}`}
+              className="hover:text-[#9fd3ff] transition-colors"
+            >
+              {companyInfo.phone}
             </a>
-            <a href="mailto:info@ultra-filter.de" className="hover:text-[#9fd3ff] transition-colors hidden sm:block">
-              info@ultra-filter.de
+            <a href={`mailto:${companyInfo.email}`} className="hover:text-[#9fd3ff] transition-colors hidden sm:block">
+              {companyInfo.email}
             </a>
             <a
               href="https://www.youtube.com/channel/UC8Tzmwj8P4Zef_nXVjJCO-A"

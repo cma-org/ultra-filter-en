@@ -32,8 +32,8 @@ export const productCategories = [
 export const valueProps = [
   {
     icon: 'shield',
-    title: 'German Engineering',
-    body: 'Designed and manufactured in Hilden, Germany — meeting the highest quality standards.',
+    title: 'Proven Technology',
+    body: 'The ultrafilter product range — engineered for performance and supported locally from Bangalore.',
   },
   {
     icon: 'globe',

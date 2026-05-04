@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import HeroCarousel from '@/components/home/HeroCarousel';
+import HeroSection from '@/components/home/HeroSection';
 import HomeBelowHeroSections from '@/components/home/HomeBelowHeroSections';
 import ProductCard from '@/components/products/ProductCard';
 import ProductGrid from '@/components/products/ProductGrid';
@@ -15,7 +15,7 @@ import { productCategories, valueProps } from '@/content/homepage';
 export const metadata: Metadata = {
   title: 'ultrafilter – The Filtration Manufacturer | Compressed Air Filtration, Drying & Measurement',
   description:
-    'ultrafilter GmbH — premium manufacturer of compressed air filtration, drying technology, condensate management, and measurement instruments. Made in Germany. Active in 30+ countries.',
+    'Ultrafilter (India) Pvt. Ltd. — compressed air filtration, drying technology, condensate management, and measurement instruments. Registered office: Bangalore, India.',
 };
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -42,13 +42,23 @@ const iconMap: Record<string, React.ReactNode> = {
   ),
 };
 
+const HERO_IMAGE = '/images/hero/hero%20uf.png';
+
 export default function HomePage() {
+  const hero = heroSlides[0]!;
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-1">
-        {/* Hero Carousel */}
-        <HeroCarousel slides={heroSlides} />
+        <HeroSection
+          imageSrc={HERO_IMAGE}
+          heading={hero.heading}
+          subheading={hero.subheading}
+          ctaLabel={hero.ctaLabel}
+          ctaHref={hero.ctaHref}
+          imageAlt="ultrafilter laboratory — filtration research and quality testing"
+        />
 
         <HomeBelowHeroSections />
 
@@ -79,7 +89,7 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4">
             <SectionHeading
               title="Why ultrafilter?"
-              subtitle="Owner-operated. Independently owned. Engineered in Germany."
+              subtitle="Local support from Bangalore. Products and standards from the ultrafilter range."
               align="center"
             />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-2">
@@ -102,7 +112,7 @@ export default function HomePage() {
             <div className="relative overflow-hidden rounded-md">
               <div
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: "url('/images/services/maintenance.jpg')" }}
+                style={{ backgroundImage: "url('/images/services/inspectionmaintainance.jpg')" }}
                 aria-hidden
               />
               <div className="absolute inset-0 bg-gradient-to-r from-[#00264a]/95 via-[#003366]/82 to-[#003366]/45" aria-hidden />

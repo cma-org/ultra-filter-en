@@ -14,7 +14,7 @@ export const metadata: Metadata = { title: sub.metaTitle, description: sub.metaD
 const sectionRows = [
   {
     title: 'ultra.pure PE',
-    image: '/Industrial%20filtration/HPFE/ultra%20pure%20pe.jpeg',
+    image: '/images/products/Industrial%20filtration/HPFE/ultra%20pure%20pe.jpeg',
     body: 'For efficient water, oil aerosol, and particle removal from compressed air and gases.',
     bullets: [
       'Pure high molecular weight polyethylene media',
@@ -29,7 +29,7 @@ const sectionRows = [
   },
   {
     title: 'ultra.pure SB',
-    image: '/Industrial%20filtration/HPFE/ultra%20pure%20sb.jpeg',
+    image: '/images/products/Industrial%20filtration/HPFE/ultra%20pure%20sb.jpeg',
     body: 'Reliable pre-filtration stage for coarse particles and liquids.',
     bullets: [
       'Lower differential pressure',
@@ -40,7 +40,7 @@ const sectionRows = [
   },
   {
     title: 'ultra.pure FF / MF / SMF',
-    image: '/Industrial%20filtration/HPFE/FF%20MF%20SMF.jpeg',
+    image: '/images/products/Industrial%20filtration/HPFE/FF%20MF%20SMF.jpeg',
     body: 'Fine and ultra-fine filtration grades for compressed air treatment trains.',
     bullets: [
       'Removes water and oil aerosols in pre-treatment stages',
@@ -54,7 +54,7 @@ const sectionRows = [
   },
   {
     title: 'ultra.pure AK',
-    image: '/Industrial%20filtration/HPFE/AK.jpeg',
+    image: '/images/products/Industrial%20filtration/HPFE/AK.jpeg',
     body: 'For compressed removal of oil vapors and odors from compressed air.',
     bullets: ['Activated carbon based adsorption stage'],
     downloads: [
@@ -64,7 +64,7 @@ const sectionRows = [
   },
   {
     title: 'ultra.pure AKC',
-    image: '/Industrial%20filtration/HPFE/AKC.jpeg',
+    image: '/images/products/Industrial%20filtration/HPFE/AKC.jpeg',
     body: 'Specially developed for efficient removal of vapors and odors from compressed air.',
     bullets: [
       'Operating temperature range 1.5 - 45 deg C',
@@ -74,7 +74,7 @@ const sectionRows = [
   },
   {
     title: 'ultra.pure FPP / MFP / SMFP silicone-free',
-    image: '/Industrial%20filtration/HPFE/FF%20MF%20SMFG%20silicon%20free.jpeg',
+    image: '/images/products/Industrial%20filtration/HPFE/FF%20MF%20SMFG%20silicon%20free.jpeg',
     body: 'High-capacity silicone-free media for demanding industrial applications.',
     bullets: [
       '450% larger filter media than standard elements',

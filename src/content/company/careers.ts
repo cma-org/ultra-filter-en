@@ -3,7 +3,7 @@ import type { CompanyPage, JobPosting } from '@/types/company';
 export const careersPage: CompanyPage = {
   title: 'Careers',
   metaTitle: 'Careers at ultrafilter | Join Our Team',
-  metaDescription: 'Join the ultrafilter team — an owner-operated manufacturer of compressed air filtration equipment in Hilden, Germany. View current job openings.',
+  metaDescription: 'Join the Ultrafilter (India) team — compressed air filtration and treatment in Bangalore. View current job openings.',
   heroTitle: 'Careers at ultrafilter',
   intro: 'We are looking for motivated people who want to shape the future of compressed air treatment technology with us. At ultrafilter, you will find a collaborative, owner-operated environment where personal responsibility and expertise are valued.',
   sections: [
@@ -21,8 +21,8 @@ export const careersPage: CompanyPage = {
 export const openPositions: JobPosting[] = [
   {
     title: 'Service Technician (m/f/d)',
-    location: 'Hilden, Germany (field-based)',
+    location: 'Bangalore, Karnataka, India (field-based)',
     type: 'Full-time, permanent',
-    description: 'We are looking for a qualified service technician to join our growing field service team. You will carry out maintenance, inspection, repair, and commissioning of ultrafilter compressed air treatment equipment at customer sites throughout Germany and neighbouring countries.',
+    description: 'We are looking for a qualified service technician to join our growing field service team. You will carry out maintenance, inspection, repair, and commissioning of ultrafilter compressed air treatment equipment at customer sites across India.',
   },
 ];

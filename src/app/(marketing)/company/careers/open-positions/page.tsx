@@ -7,7 +7,7 @@ import { openPositions } from '@/content/company/careers';
 
 export const metadata: Metadata = {
   title: 'Open Positions | ultrafilter Careers',
-  description: 'Current job openings at ultrafilter GmbH in Hilden, Germany. Join our team of compressed air treatment specialists.',
+  description: 'Current job openings at Ultrafilter (India) Pvt. Ltd. in Bangalore. Join our team of compressed air treatment specialists.',
 };
 
 export default function Page() {
@@ -15,7 +15,7 @@ export default function Page() {
     <>
       <PageHero
         title="Open Positions"
-        subtitle="Current vacancies at ultrafilter GmbH â€” join our team of compressed air treatment specialists."
+        subtitle="Current vacancies at Ultrafilter (India) Pvt. Ltd. — join our team of compressed air treatment specialists."
         image="/images/company/careers-hero.jpg"
       />
       <Breadcrumbs items={[
@@ -29,10 +29,10 @@ export default function Page() {
             {openPositions.map((job, i) => (
               <div key={i} className="border border-gray-200 rounded p-6 hover:border-[#0066a4] transition-colors">
                 <h2 className="text-xl font-bold text-[#003366] mb-1">{job.title}</h2>
-                <p className="text-sm text-gray-500 mb-3">{job.location} Â· {job.type}</p>
+                <p className="text-sm text-gray-500 mb-3">{job.location} · {job.type}</p>
                 <p className="text-gray-700 leading-relaxed mb-4">{job.description}</p>
                 <a
-                  href={`mailto:careers@ultrafilter.de?subject=Application: ${encodeURIComponent(job.title)}`}
+                  href={`mailto:info@ultrafilterindia.com?subject=Application: ${encodeURIComponent(job.title)}`}
                   className="inline-block bg-[#0066a4] text-white px-6 py-2 font-semibold hover:bg-[#00558a] transition-colors rounded text-sm"
                 >
                   Apply Now
@@ -43,11 +43,11 @@ export default function Page() {
         ) : (
           <div className="text-center py-16">
             <p className="text-gray-600 text-lg mb-4">There are currently no advertised vacancies.</p>
-            <p className="text-gray-500">We welcome unsolicited applications â€” send your CV to <a href="mailto:careers@ultrafilter.de" className="text-[#0066a4] hover:underline">careers@ultrafilter.de</a>.</p>
+            <p className="text-gray-500">We welcome unsolicited applications — send your CV to <a href="mailto:info@ultrafilterindia.com" className="text-[#0066a4] hover:underline">info@ultrafilterindia.com</a>.</p>
           </div>
         )}
         <div className="mt-10">
-          <Link href="/company/careers" className="text-[#0066a4] font-semibold hover:underline">â† Back to Careers</Link>
+          <Link href="/company/careers" className="text-[#0066a4] font-semibold hover:underline">← Back to Careers</Link>
         </div>
       </div>
       <NewsletterCTA />

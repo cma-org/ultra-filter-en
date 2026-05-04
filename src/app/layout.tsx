@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: '%s | ultrafilter',
   },
   description:
-    'ultrafilter GmbH — premium manufacturer of compressed air filtration, drying technology, condensate management, and measurement instruments. Made in Germany.',
+    'Ultrafilter (India) Pvt. Ltd. — compressed air filtration, drying technology, condensate management, and measurement instruments for the Indian market.',
   keywords: [
     'compressed air filtration',
     'filter elements',

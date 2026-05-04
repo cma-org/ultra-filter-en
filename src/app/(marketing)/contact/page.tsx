@@ -6,7 +6,7 @@ import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
 
 export const metadata: Metadata = {
   title: 'Contact | ultrafilter',
-  description: 'Contact ultrafilter GmbH — get in touch for product enquiries, technical support, service requests, or general information.',
+  description: 'Contact Ultrafilter (India) Pvt. Ltd. — product enquiries, technical support, service requests, or general information.',
 };
 
 export default function Page() {

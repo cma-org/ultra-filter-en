@@ -69,10 +69,10 @@ export default function HomeBelowHeroSections() {
             Welcome to ultrafilter - The Filtration Manufacturer
           </h2>
           <p className={`mb-8 max-w-none text-left text-base leading-relaxed md:text-lg ${bodyGray}`}>
-            Leading in cutting-edge filtration technology, Ultrafilter GmbH empowers industries worldwide with
-            scalable, high-quality filtration solutions. Committed to excellence, our products set new standards in
+            Leading in cutting-edge filtration technology, Ultrafilter (India) Pvt. Ltd. empowers industries across India
+            with scalable, high-quality filtration solutions. Committed to excellence, our products set new standards in
             operational performance, ensuring your processes benefit from unparalleled purity and precision. Discover the
-            power of advanced filtration technology with Ultrafilter GmbH today.
+            power of advanced filtration technology with ultrafilter today.
           </p>
 
           <hr className={`mb-10 mt-2 border-0 border-t ${divider}`} />
@@ -116,7 +116,7 @@ export default function HomeBelowHeroSections() {
             Your partner in purity and efficiency
           </h2>
           <p className={`mb-8 text-left text-base leading-relaxed md:text-lg ${bodyGray}`}>
-            Recognizing the diverse requirements across industries, Ultrafilter GmbH offers tailored filtration
+            Recognizing the diverse requirements across industries, Ultrafilter (India) Pvt. Ltd. offers tailored filtration
             solutions to address your specific challenges. Whether you operate in food processing, pharmaceuticals, or
             technology, our precision-engineered filtration solutions ensure your products meet the highest safety and
             quality standards. With a promise of rapid service and delivery, we stand as a dependable partner in securing

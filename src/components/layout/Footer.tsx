@@ -27,21 +27,26 @@ export default function Footer() {
               </Link>
             </div>
             <address className="not-italic text-sm text-blue-100 leading-relaxed">
+              {companyInfo.address.headline ? (
+                <p className="text-xs font-semibold text-blue-200">{companyInfo.address.headline}</p>
+              ) : null}
               <p className="font-semibold text-white">{companyInfo.name}</p>
-              <p>{companyInfo.address.street}</p>
-              <p>{companyInfo.address.city}</p>
-              <p>{companyInfo.address.country}</p>
+              {companyInfo.address.lines.map((line) => (
+                <p key={line}>{line}</p>
+              ))}
             </address>
             <div className="mt-3 text-sm text-blue-100 space-y-1">
               <p>
                 <span className="text-blue-300">Tel:</span>{' '}
-                <a href={`tel:${companyInfo.phone.replace(/\s/g, '')}`} className="hover:text-white transition-colors">
+                <a href={`tel:${companyInfo.phoneTel ?? companyInfo.phone.replace(/[^\d+]/g, '')}`} className="hover:text-white transition-colors">
                   {companyInfo.phone}
                 </a>
               </p>
-              <p>
-                <span className="text-blue-300">Fax:</span> {companyInfo.fax}
-              </p>
+              {companyInfo.fax ? (
+                <p>
+                  <span className="text-blue-300">Fax:</span> {companyInfo.fax}
+                </p>
+              ) : null}
               <p>
                 <span className="text-blue-300">Email:</span>{' '}
                 <a href={`mailto:${companyInfo.email}`} className="hover:text-white transition-colors">
@@ -49,7 +54,7 @@ export default function Footer() {
                 </a>
               </p>
             </div>
-            <p className="mt-3 text-xs text-blue-300">{companyInfo.vdma}</p>
+            {companyInfo.vdma ? <p className="mt-3 text-xs text-blue-300">{companyInfo.vdma}</p> : null}
           </div>
 
           {/* Products nav */}
@@ -130,7 +135,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-blue-800 bg-[#002244]">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-blue-300">
-          <p>Â© {year} ultrafilter GmbH. All rights reserved.</p>
+          <p>© {year} {companyInfo.name}. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/legal-notice" className="hover:text-white transition-colors">Legal Notice</Link>

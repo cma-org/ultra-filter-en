@@ -14,7 +14,7 @@ export const services: ServicePage[] = [
       {
         type: 'text',
         heading: 'Fast, Reliable Repairs',
-        body: '<p>ultrafilter repair service covers the full product portfolio — filter housings, refrigeration dryers, adsorption dryers, membrane dryers, condensate drains, oil-water separators, and measurement instruments. All repairs are carried out by factory-trained engineers using genuine ultrafilter parts.</p><p>Equipment can be sent to our Hilden workshop or, for larger installations, our engineers can attend on-site. Detailed repair reports are provided with every job.</p>',
+        body: '<p>ultrafilter repair service covers the full product portfolio — filter housings, refrigeration dryers, adsorption dryers, membrane dryers, condensate drains, oil-water separators, and measurement instruments. All repairs are carried out by factory-trained engineers using genuine ultrafilter parts.</p><p>Equipment can be sent to our Bangalore service centre or, for larger installations, our engineers can attend on-site. Detailed repair reports are provided with every job.</p>',
       },
       {
         type: 'list',

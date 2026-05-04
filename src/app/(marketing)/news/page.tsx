@@ -8,7 +8,7 @@ import { articles, events } from '@/content/news';
 
 export const metadata: Metadata = {
   title: 'News & Events | ultrafilter',
-  description: 'Latest news, events, and updates from ultrafilter GmbH — innovations in compressed air filtration, drying, and measurement technology.',
+  description: 'Latest news, events, and updates from Ultrafilter (India) — compressed air filtration, drying, and measurement technology.',
 };
 
 export default function Page() {

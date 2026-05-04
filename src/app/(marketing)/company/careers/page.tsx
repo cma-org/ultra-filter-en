@@ -58,7 +58,7 @@ export default function Page() {
 
         <div className="bg-[#f5f5f5] p-6 rounded">
           <h3 className="text-lg font-bold text-[#003366] mb-2">Unsolicited Application</h3>
-          <p className="text-gray-700 mb-4">Don&apos;t see a suitable opening? We welcome unsolicited applications from motivated candidates. Send your CV and cover letter to <a href="mailto:careers@ultrafilter.de" className="text-[#0066a4] hover:underline">careers@ultrafilter.de</a>.</p>
+          <p className="text-gray-700 mb-4">Don&apos;t see a suitable opening? We welcome unsolicited applications from motivated candidates. Send your CV and cover letter to <a href="mailto:info@ultrafilterindia.com" className="text-[#0066a4] hover:underline">info@ultrafilterindia.com</a>.</p>
         </div>
       </div>
       <NewsletterCTA />

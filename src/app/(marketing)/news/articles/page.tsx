@@ -7,7 +7,7 @@ import { articles } from '@/content/news';
 
 export const metadata: Metadata = {
   title: 'Articles | ultrafilter News',
-  description: 'Technical articles, product announcements, and company news from ultrafilter GmbH.',
+  description: 'Technical articles, product announcements, and company news from Ultrafilter (India) Pvt. Ltd.',
 };
 
 export default function Page() {
