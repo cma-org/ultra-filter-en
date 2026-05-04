@@ -3,6 +3,14 @@ import Link from 'next/link';
 import { navigation } from '@/content/navigation';
 import { companyInfo } from '@/content/company';
 
+const footerCompanyLinks = [
+  { label: 'About Us', href: '/company/about-us' },
+  { label: 'Careers', href: '/company/careers' },
+  { label: 'Open Positions', href: '/company/careers/open-positions' },
+  { label: 'Production', href: '/company/production' },
+  { label: 'Research & Development', href: '/company/research-development' },
+] as const;
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -61,6 +69,11 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider mb-4 text-[#0066a4]">Products</h3>
             <ul className="space-y-1.5 text-sm text-blue-100">
+              <li>
+                <Link href="/products" className="hover:text-white transition-colors font-semibold">
+                  All products
+                </Link>
+              </li>
               {navigation.find(n => n.label === 'Products')?.children?.map((cat) => (
                 <li key={cat.href}>
                   <Link href={cat.href} className="hover:text-white transition-colors">
@@ -75,6 +88,11 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider mb-4 text-[#0066a4]">Services</h3>
             <ul className="space-y-1.5 text-sm text-blue-100 mb-6">
+              <li>
+                <Link href="/services" className="font-semibold transition-colors hover:text-white">
+                  All services
+                </Link>
+              </li>
               {navigation.find(n => n.label === 'Services')?.children?.map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="hover:text-white transition-colors">
@@ -85,7 +103,7 @@ export default function Footer() {
             </ul>
             <h3 className="text-sm font-bold uppercase tracking-wider mb-3 text-[#0066a4]">Company</h3>
             <ul className="space-y-1.5 text-sm text-blue-100">
-              {navigation.find(n => n.label === 'Company')?.children?.map((item) => (
+              {footerCompanyLinks.map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="hover:text-white transition-colors">
                     {item.label}

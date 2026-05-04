@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
 import { navigation } from '@/content/navigation';
 import { companyInfo } from '@/content/company';
-import type { NavItem } from '@/types/navigation';
 import { cn } from '@/lib/utils';
 
 export default function Header() {
@@ -87,14 +86,18 @@ export default function Header() {
               <div key={item.href} className="relative">
                 {item.children ? (
                   <button
+                    type="button"
                     className={cn(
-                      'flex items-center gap-1 px-4 py-5 text-sm font-semibold transition-colors border-b-2',
+                      'flex cursor-pointer items-center gap-1 border-b-2 px-4 py-5 text-sm font-semibold transition-colors bg-transparent',
                       activeMenu === item.href
                         ? 'text-[#003366] border-[#0066a4]'
-                        : 'text-gray-700 border-transparent hover:text-[#003366] hover:border-[#0066a4]'
+                        : 'border-transparent text-gray-700 hover:border-[#0066a4] hover:text-[#003366]'
                     )}
                     onMouseEnter={() => setActiveMenu(item.href)}
-                    onClick={() => setActiveMenu(activeMenu === item.href ? null : item.href)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setActiveMenu(activeMenu === item.href ? null : item.href);
+                    }}
                     aria-expanded={activeMenu === item.href}
                   >
                     {item.label}
@@ -127,15 +130,32 @@ export default function Header() {
                       <div className="grid min-h-0 grid-cols-2 gap-0 p-5">
                         {item.children.map((cat) => (
                           <div key={cat.href} className="mb-3 pr-6">
-                            <Link
-                              href={cat.href}
-                              className="mb-2 block text-base font-bold text-[#003366] transition-colors hover:text-[#0066a4]"
-                              onClick={() => setActiveMenu(null)}
-                            >
-                              {cat.label}
-                            </Link>
-                            {cat.description && (
-                              <p className="mb-2 text-sm leading-snug text-gray-500">{cat.description}</p>
+                            {cat.children?.length ? (
+                              <span className="mb-2 block text-base font-bold text-[#003366]">{cat.label}</span>
+                            ) : (
+                              <Link
+                                href={cat.href}
+                                className="mb-2 block text-base font-bold text-[#003366] transition-colors hover:text-[#0066a4]"
+                                onClick={() => setActiveMenu(null)}
+                              >
+                                {cat.label}
+                              </Link>
+                            )}
+                            {cat.children?.length ? (
+                              <p className="mb-2 text-sm leading-snug text-gray-500">
+                                {cat.description}{' '}
+                                <Link
+                                  href={cat.href}
+                                  className="font-semibold text-[#0066a4] underline-offset-2 hover:text-[#003366] hover:underline"
+                                  onClick={() => setActiveMenu(null)}
+                                >
+                                  View all →
+                                </Link>
+                              </p>
+                            ) : (
+                              cat.description && (
+                                <p className="mb-2 text-sm leading-snug text-gray-500">{cat.description}</p>
+                              )
                             )}
                             {cat.children?.map((sub) => (
                               <Link
@@ -198,7 +218,27 @@ export default function Header() {
           <nav className="px-4 py-4">
             {navigation.map((item) => (
               <div key={item.href} className="border-b border-gray-100 last:border-0">
-                <div className="flex items-center justify-between">
+                {item.children ? (
+                  <button
+                    type="button"
+                    className="flex w-full items-center justify-between gap-2 py-3 text-left text-sm font-bold text-[#003366]"
+                    onClick={() => setMobileExpanded(mobileExpanded === item.href ? null : item.href)}
+                    aria-expanded={mobileExpanded === item.href}
+                    aria-controls={`mobile-submenu-${item.href.replace(/\//g, '-')}`}
+                    id={`mobile-nav-${item.href.replace(/\//g, '-')}`}
+                  >
+                    {item.label}
+                    <svg
+                      className={cn('h-4 w-4 shrink-0 text-gray-500 transition-transform', mobileExpanded === item.href && 'rotate-180')}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                ) : (
                   <Link
                     href={item.href}
                     className="block py-3 text-sm font-bold text-[#003366]"
@@ -206,20 +246,14 @@ export default function Header() {
                   >
                     {item.label}
                   </Link>
-                  {item.children && (
-                    <button
-                      className="p-2 text-gray-500"
-                      onClick={() => setMobileExpanded(mobileExpanded === item.href ? null : item.href)}
-                      aria-label={`Expand ${item.label}`}
-                    >
-                      <svg className={cn('w-4 h-4 transition-transform', mobileExpanded === item.href && 'rotate-180')} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
-                  )}
-                </div>
+                )}
                 {item.children && mobileExpanded === item.href && (
-                  <div className="pb-3 pl-4">
+                  <div
+                    id={`mobile-submenu-${item.href.replace(/\//g, '-')}`}
+                    className="pb-3 pl-4"
+                    role="region"
+                    aria-labelledby={`mobile-nav-${item.href.replace(/\//g, '-')}`}
+                  >
                     {item.children.map((child) => (
                       <div key={child.href}>
                         <Link

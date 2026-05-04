@@ -18,8 +18,58 @@
   box-sizing: border-box;
 }
 
+/* Sticky header offset for anchor links (#id) */
+:root {
+  --header-sticky-offset: 7.5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .uf-page-shell {
+    animation: uf-page-enter 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  /* Subtle interactive polish */
+  a:not([class*='transition']) {
+    transition: color 0.2s ease, opacity 0.2s ease;
+  }
+
+  button:not([class*='transition']) {
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease,
+      border-color 0.2s ease,
+      box-shadow 0.2s ease,
+      transform 0.2s ease;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .uf-page-shell {
+    animation: none;
+  }
+}
+
 html {
-  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-sticky-offset);
+}
+
+@keyframes uf-page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 body {

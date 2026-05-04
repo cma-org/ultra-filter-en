@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import CookieConsent from '@/components/layout/CookieConsent';
+import NavigationScroll from '@/components/layout/NavigationScroll';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://ultra-filter.com';
 
@@ -33,7 +34,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="h-full">
-      <body className="min-h-full flex flex-col antialiased">
+      <body className="flex min-h-full flex-col antialiased">
+        <NavigationScroll />
         {children}
         <CookieConsent />
       </body>
