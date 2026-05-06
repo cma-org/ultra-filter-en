@@ -20,7 +20,7 @@ export default function ProductCard({ title, description, image, href, className
       )}
     >
       {/* Image */}
-      <div className="relative h-44 w-full bg-gray-100 overflow-hidden">
+      <div className="relative h-56 w-full bg-gray-100 overflow-hidden">
         {image ? (
           <Image
             src={image}

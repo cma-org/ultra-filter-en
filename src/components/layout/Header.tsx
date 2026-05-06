@@ -82,15 +82,14 @@ export default function Header() {
 
           {/* Desktop nav */}
           <nav ref={menuRef} className="hidden lg:flex items-center gap-0" aria-label="Main navigation">
-            {navigation.map((item) => (
+            {navigation.map((item) => {
+              const isMegaMenu = Boolean(item.children?.some(c => c.children));
+              return (
               <div
                 key={item.href}
                 className="relative"
                 onMouseEnter={() => {
                   if (item.children) setActiveMenu(item.href);
-                }}
-                onMouseLeave={() => {
-                  if (item.children) setActiveMenu(null);
                 }}
               >
                 {item.children ? (
@@ -127,33 +126,30 @@ export default function Header() {
                   <div
                     className={cn(
                       'z-[70] animate-in border-t-2 border-[#0066a4] bg-white shadow-xl fade-in duration-150 overflow-x-hidden',
-                      item.children.some(c => c.children)
-                        ? 'fixed inset-x-0 top-[var(--header-height)] max-h-[min(85vh,calc(100dvh-var(--header-height)))] overflow-x-hidden overflow-y-auto'
+                      isMegaMenu
+                        ? 'absolute left-1/2 top-full w-[min(96vw,1100px)] -translate-x-1/2 max-h-[min(85vh,calc(100dvh-var(--header-height)-1rem))] overflow-x-hidden overflow-y-auto'
                         : 'absolute top-full right-0 w-[min(92vw,360px,calc(100vw-2rem))] max-h-[min(70vh,calc(100dvh-var(--header-height)-1rem))] overflow-y-auto'
                     )}
+                    onMouseLeave={() => setActiveMenu(null)}
                   >
                     {/* Products: mega menu — viewport-bound; inner max-width matches site shell */}
-                    {item.children.some(c => c.children) ? (
+                    {isMegaMenu ? (
                       <div className="mx-auto grid min-h-0 max-w-7xl grid-cols-1 gap-x-8 gap-y-6 px-4 py-5 sm:px-6 md:grid-cols-2 xl:grid-cols-3">
                         {item.children.map((cat) => (
                           <div key={cat.href} className="min-w-0">
-                            {cat.children?.length ? (
-                              <span className="mb-2 block text-base font-bold text-[#003366]">{cat.label}</span>
-                            ) : (
-                              <Link
-                                href={cat.href}
-                                className="mb-2 block text-base font-bold text-[#003366] transition-colors hover:text-[#0066a4]"
-                                onClick={() => setActiveMenu(null)}
-                              >
-                                {cat.label}
-                              </Link>
-                            )}
+                            <Link
+                              href={cat.href}
+                              className="mb-2 block text-base font-bold text-[#003366] transition-colors hover:text-[#0066a4]"
+                              onClick={() => setActiveMenu(null)}
+                            >
+                              {cat.label}
+                            </Link>
                             {cat.children?.length ? (
                               <p className="mb-2 text-sm leading-snug text-gray-500">
                                 {cat.description}{' '}
                                 <Link
                                   href={cat.href}
-                                  className="font-semibold text-[#0066a4] underline-offset-2 hover:text-[#003366] hover:underline"
+                                  className="inline-flex whitespace-nowrap font-semibold text-[#0066a4] underline-offset-2 hover:text-[#003366] hover:underline"
                                   onClick={() => setActiveMenu(null)}
                                 >
                                   View all →
@@ -196,7 +192,7 @@ export default function Header() {
                   </div>
                 )}
               </div>
-            ))}
+            )})}
           </nav>
 
           {/* Mobile hamburger */}
