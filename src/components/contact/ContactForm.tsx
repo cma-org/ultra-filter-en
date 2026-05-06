@@ -143,7 +143,7 @@ export default function ContactForm() {
             value={form.phone}
             onChange={e => handleChange('phone', e.target.value)}
             className={inputCn(false)}
-            placeholder="+91-80-4142 ..."
+            placeholder="+91 80 4142 ..."
             autoComplete="tel"
           />
         </Field>

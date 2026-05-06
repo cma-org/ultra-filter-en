@@ -6,9 +6,10 @@ export const companyInfo = {
   vdma: '',
   address: {
     headline: 'Registered Office & Works',
-    lines: ['Plot No. 70, Bommasandra Indl. Area', 'Bangalore - 560 099, Karnataka, INDIA'],
+    lines: ['Plot No. 70, Bommasandra Indl. Area', 'Bangalore - 560099, Karnataka, INDIA'],
   },
-  phone: '+91-80-4142 9900/2783 2051',
+  phone: '+91 80 4142 9900',
+
   /** Primary number for tel: links */
   phoneTel: '+918041429900',
   fax: undefined as string | undefined,

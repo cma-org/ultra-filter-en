@@ -5,7 +5,7 @@ export const measurementTechnology: ProductCategory = {
   title: 'Measurement Technology',
   description:
     'Precision instruments and complete measurement systems for compressed air quality and efficiency monitoring — dew point, flow, leak detection, residual oil, and particle measurement.',
-  image: '/images/products/Measurement%20technology/Dew%20Point%20Measurement.jpeg',
+  image: '/images/products/measurement-technology/dewpoint.jpg',
   metaTitle: 'Measurement Technology – Compressed Air Instruments',
   metaDescription:
     'ultrafilter measurement technology: dew point meters, flow meters, leak detection equipment, residual oil analysers, and particle counters for compressed air systems.',

@@ -23,6 +23,10 @@ export const metadata: Metadata = {
     'oil water separator',
     'ultrafilter',
   ],
+  icons: {
+    icon: '/images/favicon.png',
+    shortcut: '/images/favicon.png',
+  },
   openGraph: {
     siteName: 'ultrafilter – The Filtration Manufacturer',
     locale: 'en_US',
