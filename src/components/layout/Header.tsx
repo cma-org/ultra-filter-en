@@ -35,7 +35,7 @@ export default function Header() {
       {/* Top bar */}
       <div className="bg-[#003366] text-white text-xs py-1.5">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-          <span className="hidden sm:block">Die Aufbereitungsexperten | The Filtration Manufacturer</span>
+          <span className="hidden sm:block">The Processing Experts | The Filtration Manufacturer</span>
           <div className="flex items-center gap-4">
             <a
               href={`tel:${companyInfo.phoneTel ?? companyInfo.phone.replace(/[^\d+]/g, '')}`}
@@ -118,18 +118,18 @@ export default function Header() {
                 {item.children && activeMenu === item.href && (
                   <div
                     className={cn(
-                      'absolute top-full z-50 animate-in border-t-2 border-[#0066a4] bg-white shadow-xl fade-in duration-150',
+                      'z-50 animate-in border-t-2 border-[#0066a4] bg-white shadow-xl fade-in duration-150 overflow-x-hidden',
                       item.children.some(c => c.children)
-                        ? 'left-1/2 w-screen max-w-none -translate-x-1/2'
-                        : 'right-0 w-[min(92vw,360px)]'
+                        ? 'fixed inset-x-0 top-[var(--header-height)] max-h-[min(85vh,calc(100dvh-var(--header-height)))] overflow-x-hidden overflow-y-auto'
+                        : 'absolute top-full right-0 w-[min(92vw,360px,calc(100vw-2rem))] max-h-[min(70vh,calc(100dvh-var(--header-height)-1rem))] overflow-y-auto'
                     )}
                     onMouseLeave={() => setActiveMenu(null)}
                   >
-                    {/* Products: two-column mega menu */}
+                    {/* Products: mega menu — viewport-bound; inner max-width matches site shell */}
                     {item.children.some(c => c.children) ? (
-                      <div className="grid min-h-0 grid-cols-2 gap-0 p-5">
+                      <div className="mx-auto grid min-h-0 max-w-7xl grid-cols-1 gap-x-8 gap-y-6 px-4 py-5 sm:px-6 md:grid-cols-2 xl:grid-cols-3">
                         {item.children.map((cat) => (
-                          <div key={cat.href} className="mb-3 pr-6">
+                          <div key={cat.href} className="min-w-0">
                             {cat.children?.length ? (
                               <span className="mb-2 block text-base font-bold text-[#003366]">{cat.label}</span>
                             ) : (
@@ -161,7 +161,7 @@ export default function Header() {
                               <Link
                                 key={sub.href}
                                 href={sub.href}
-                                className="block border-l-2 border-transparent py-0.5 pl-2 text-sm text-gray-600 transition-colors hover:border-[#0066a4] hover:text-[#0066a4]"
+                                className="block break-words border-l-2 border-transparent py-0.5 pl-2 text-sm text-gray-600 transition-colors hover:border-[#0066a4] hover:text-[#0066a4]"
                                 onClick={() => setActiveMenu(null)}
                               >
                                 {sub.label}
@@ -172,12 +172,12 @@ export default function Header() {
                       </div>
                     ) : (
                       // Simple dropdown
-                      <ul className="py-1.5">
+                      <ul className="min-w-0 py-1.5">
                         {item.children.map((child) => (
                           <li key={child.href}>
                             <Link
                               href={child.href}
-                              className="block px-6 py-2 text-base text-gray-700 transition-colors hover:bg-blue-50 hover:text-[#003366]"
+                              className="block break-words px-6 py-2 text-base text-gray-700 transition-colors hover:bg-blue-50 hover:text-[#003366]"
                               onClick={() => setActiveMenu(null)}
                             >
                               {child.label}
@@ -250,15 +250,15 @@ export default function Header() {
                 {item.children && mobileExpanded === item.href && (
                   <div
                     id={`mobile-submenu-${item.href.replace(/\//g, '-')}`}
-                    className="pb-3 pl-4"
+                    className="min-w-0 overflow-x-hidden pb-3 pl-4"
                     role="region"
                     aria-labelledby={`mobile-nav-${item.href.replace(/\//g, '-')}`}
                   >
                     {item.children.map((child) => (
-                      <div key={child.href}>
+                      <div key={child.href} className="min-w-0">
                         <Link
                           href={child.href}
-                          className="block py-1.5 text-sm font-semibold text-gray-700 hover:text-[#003366]"
+                          className="block break-words py-1.5 text-sm font-semibold text-gray-700 hover:text-[#003366]"
                           onClick={() => setMobileOpen(false)}
                         >
                           {child.label}
@@ -267,7 +267,7 @@ export default function Header() {
                           <Link
                             key={sub.href}
                             href={sub.href}
-                            className="block py-1 text-xs text-gray-500 hover:text-[#0066a4] pl-3"
+                            className="block break-words py-1 pl-3 text-xs text-gray-500 hover:text-[#0066a4]"
                             onClick={() => setMobileOpen(false)}
                           >
                             {sub.label}
