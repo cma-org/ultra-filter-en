@@ -102,23 +102,7 @@ export default function Page() {
 
             <ContactSidebarPlain />
 
-            <div className="border-b border-[#d9d9d9] pb-4">
-              <h3 className="mb-2 text-[13px] font-semibold text-[#123f66]">Job advertisement</h3>
-              <div className="flex h-24 items-center justify-center bg-gradient-to-r from-[#d8dee8] via-white to-[#c0cadb] text-sm font-semibold text-[#1f4567]">
-                Gesucht
-              </div>
-            </div>
-
-            <div className="border-b border-[#d9d9d9] pb-4">
-              <div className="flex h-28 items-center justify-center rounded-full border-4 border-[#1a4d7d] text-center text-[#1a4d7d]">
-                <div>
-                  <p className="text-4xl font-bold leading-none text-[#c2252b]">24</p>
-                  <p className="text-xs font-semibold uppercase tracking-widest">Stunden</p>
-                </div>
-              </div>
-            </div>
-
-            <div>
+<div>
               <h3 className="mb-2 text-[13px] font-semibold text-[#123f66]">Ultrafilters worldwide</h3>
               <p className="text-sm text-[#555]">India · Global ultrafilter network</p>
             </div>
@@ -129,4 +113,6 @@ export default function Page() {
     </>
   );
 }
+
+
 

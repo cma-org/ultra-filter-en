@@ -4,7 +4,6 @@ import PageHero from '@/components/shared/PageHero';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
-import JobPostingBanner from '@/components/shared/JobPostingBanner';
 import { industrialFiltration } from '@/content/products/industrial-filtration';
 
 const sub = industrialFiltration.subcategories.find(s => s.slug === 'high-performance-filter-elements')!;
@@ -157,7 +156,7 @@ export default function Page() {
           </div>
           <aside className="w-full lg:w-72 shrink-0 space-y-5">
             <ContactInfoBlock />
-            <JobPostingBanner />
+            
           </aside>
         </div>
       </div>
@@ -165,4 +164,5 @@ export default function Page() {
     </>
   );
 }
+
 

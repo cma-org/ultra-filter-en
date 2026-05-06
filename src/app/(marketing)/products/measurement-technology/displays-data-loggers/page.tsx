@@ -4,7 +4,6 @@ import PageHero from '@/components/shared/PageHero';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
-import JobPostingBanner from '@/components/shared/JobPostingBanner';
 import { measurementTechnology } from '@/content/products/measurement-technology';
 
 const sub = measurementTechnology.subcategories.find(s => s.slug === 'displays-data-loggers')!;
@@ -60,11 +59,12 @@ export default function Page() {
               </a>
             </div>
           </div>
-          <aside className="w-full lg:w-72 shrink-0 space-y-5"><ContactInfoBlock /><JobPostingBanner /></aside>
+          <aside className="w-full lg:w-72 shrink-0 space-y-5"><ContactInfoBlock /></aside>
         </div>
       </div>
       <NewsletterCTA />
     </>
   );
 }
+
 

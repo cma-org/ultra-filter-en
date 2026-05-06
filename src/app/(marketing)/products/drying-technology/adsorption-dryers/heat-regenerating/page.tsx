@@ -3,7 +3,6 @@ import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
-import JobPostingBanner from '@/components/shared/JobPostingBanner';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
 
 const pageTitle = 'Heat Regenerating Dryers';
@@ -200,7 +199,7 @@ export default function Page() {
           </div>
           <aside className="w-full lg:w-72 shrink-0 space-y-5">
             <ContactInfoBlock />
-            <JobPostingBanner />
+            
           </aside>
         </div>
       </div>
@@ -208,4 +207,5 @@ export default function Page() {
     </>
   );
 }
+
 

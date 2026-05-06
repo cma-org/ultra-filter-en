@@ -5,7 +5,7 @@ export const condensateTechnology: ProductCategory = {
   title: 'Condensate Technology',
   description:
     'Complete condensate management for compressed air systems — zero-loss drains, oil-water separators, cyclone separators, storage tanks, and pre/after-coolers.',
-  image: '/images/products/condensate-technology.jpg',
+  image: '/images/home/Precision%20filtration%20technology/liquid_filtration.jpg',
   metaTitle: 'Condensate Technology – Drains, Separators & Coolers',
   metaDescription:
     'ultrafilter condensate technology: zero-loss condensate drains (ultra.drain), oil-water separators (ultra.sep), cyclone separators, tanks, and coolers.',

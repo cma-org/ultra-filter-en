@@ -86,10 +86,10 @@ export const navigation: NavItem[] = [
     ],
   },
   {
-    label: 'Careers',
-    href: '/company/careers',
+    label: 'Company',
+    href: '/company/about-us',
     children: [
-      { label: 'Careers', href: '/company/careers' },
+      { label: 'About Us', href: '/company/about-us' },
       { label: 'Production', href: '/company/production' },
       { label: 'Research & Development', href: '/company/research-development' },
     ],
@@ -150,8 +150,6 @@ export const allRoutes: string[] = [
   '/services/leak-detection',
   '/company',
   '/company/about-us',
-  '/company/careers',
-  '/company/careers/open-positions',
   '/company/production',
   '/company/research-development',
 ];

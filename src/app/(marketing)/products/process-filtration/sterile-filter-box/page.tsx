@@ -1,11 +1,10 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/shared/PageHero';
 import ContentSection from '@/components/shared/ContentSection';
 import ContactInfoBlock from '@/components/shared/ContactInfoBlock';
 import NewsletterCTA from '@/components/shared/NewsletterCTA';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
-import JobPostingBanner from '@/components/shared/JobPostingBanner';
 import { processFiltration } from '@/content/products/process-filtration';
 
 const sub = processFiltration.subcategories.find(s => s.slug === 'sterile-filter-box')!;
@@ -32,10 +31,11 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <aside className="w-full lg:w-72 shrink-0 space-y-5"><ContactInfoBlock /><JobPostingBanner /></aside>
+          <aside className="w-full lg:w-72 shrink-0 space-y-5"><ContactInfoBlock /></aside>
         </div>
       </div>
       <NewsletterCTA />
     </>
   );
 }
+

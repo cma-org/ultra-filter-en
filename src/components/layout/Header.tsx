@@ -31,7 +31,7 @@ export default function Header() {
   }, [mobileOpen]);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm [--header-height:clamp(136px,20vw,168px)]">
+    <header className="sticky top-0 z-[60] bg-white shadow-sm [--header-height:clamp(136px,20vw,168px)]">
       {/* Top bar */}
       <div className="bg-[#003366] text-white text-xs py-1.5">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
@@ -83,7 +83,16 @@ export default function Header() {
           {/* Desktop nav */}
           <nav ref={menuRef} className="hidden lg:flex items-center gap-0" aria-label="Main navigation">
             {navigation.map((item) => (
-              <div key={item.href} className="relative">
+              <div
+                key={item.href}
+                className="relative"
+                onMouseEnter={() => {
+                  if (item.children) setActiveMenu(item.href);
+                }}
+                onMouseLeave={() => {
+                  if (item.children) setActiveMenu(null);
+                }}
+              >
                 {item.children ? (
                   <button
                     type="button"
@@ -93,7 +102,6 @@ export default function Header() {
                         ? 'text-[#003366] border-[#0066a4]'
                         : 'border-transparent text-gray-700 hover:border-[#0066a4] hover:text-[#003366]'
                     )}
-                    onMouseEnter={() => setActiveMenu(item.href)}
                     onClick={(e) => {
                       e.preventDefault();
                       setActiveMenu(activeMenu === item.href ? null : item.href);
@@ -118,12 +126,11 @@ export default function Header() {
                 {item.children && activeMenu === item.href && (
                   <div
                     className={cn(
-                      'z-50 animate-in border-t-2 border-[#0066a4] bg-white shadow-xl fade-in duration-150 overflow-x-hidden',
+                      'z-[70] animate-in border-t-2 border-[#0066a4] bg-white shadow-xl fade-in duration-150 overflow-x-hidden',
                       item.children.some(c => c.children)
                         ? 'fixed inset-x-0 top-[var(--header-height)] max-h-[min(85vh,calc(100dvh-var(--header-height)))] overflow-x-hidden overflow-y-auto'
                         : 'absolute top-full right-0 w-[min(92vw,360px,calc(100vw-2rem))] max-h-[min(70vh,calc(100dvh-var(--header-height)-1rem))] overflow-y-auto'
                     )}
-                    onMouseLeave={() => setActiveMenu(null)}
                   >
                     {/* Products: mega menu — viewport-bound; inner max-width matches site shell */}
                     {item.children.some(c => c.children) ? (

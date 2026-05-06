@@ -5,8 +5,6 @@ import { companyInfo } from '@/content/company';
 
 const footerCompanyLinks = [
   { label: 'About Us', href: '/company/about-us' },
-  { label: 'Careers', href: '/company/careers' },
-  { label: 'Open Positions', href: '/company/careers/open-positions' },
   { label: 'Production', href: '/company/production' },
   { label: 'Research & Development', href: '/company/research-development' },
 ] as const;
@@ -130,7 +128,7 @@ export default function Footer() {
             <ul className="space-y-1.5 text-sm text-blue-100">
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
               <li><Link href="/downloads" className="hover:text-white transition-colors">Downloads</Link></li>
-              <li><Link href="/company/careers" className="hover:text-white transition-colors">Careers</Link></li>
+              <li><Link href="/company/about-us" className="hover:text-white transition-colors">About Us</Link></li>
               <li><Link href="/news/events" className="hover:text-white transition-colors">Events</Link></li>
             </ul>
 
